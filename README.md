@@ -1,5 +1,5 @@
 PHYLO
 =====
 
-http://phylo.cs.mcgill.ca/rewrite/index.html?lang=en&type=random&random=8
+the most basic structure of phylo -- no feature and many bugs :p, this branch is for reference of phylo's basic structure.
 
