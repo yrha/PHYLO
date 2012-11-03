@@ -49,7 +49,6 @@ abstract class TbBaseMenu extends CMenu
 
 				if (isset($item['divider']))
 					echo '<li class="'.$this->getDividerCssClass().'"></li>';
-				else if (is_string($item)) echo $item;
 				else
 				{
 					$options = isset($item['itemOptions']) ? $item['itemOptions'] : array();
