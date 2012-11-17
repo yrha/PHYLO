@@ -1,0 +1,30 @@
+<html>
+<link rel='stylesheet' href='../content/css/ranking.css'>
+<div id="content_wrap" class="center" style="left:0px">
+<div style="text-align:center;">
+
+<h1>Phylo tutorial</h1>
+
+<object style="height: 390px; width: 640px"><param name="movie" value="http://www.youtube.com/v/oKcvsgIQOt0?version=3&feature=player_detailpage"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="http://www.youtube.com/v/oKcvsgIQOt0?version=3&feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="640" height="360"></object>
+
+</div>
+</div>
+
+<div id="line" class="center">
+<div class="dark"></div>
+<div class="light"></div>
+</div>
+<script src='../content/js/togglemenu.js' type='text/javascript'></script>
+<script>
+	(function() {
+		function g() {}
+		g.prototype.load = function(url) {
+			document.getElementById('rankingframe').src=url;
+			return false;
+		}
+		var proto = g.prototype,
+			attr = [["load",proto.load]];
+		common.exportSingleton("frame",g,attr);
+	})();
+</script>
+</html>

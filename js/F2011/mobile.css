@@ -1,0 +1,45 @@
+nav.mobMenu {
+	position: absolute;
+}
+
+img.mobImg {
+	position: relative;
+	top: -16em;
+	height: 10em;
+	width: 16em;
+	z-index: 1;
+	left: 2em;
+}
+
+a.mobNav {
+	z-index: 10;
+	position: relative;
+	font-size: 200%;
+	height: 1em;
+	width: 3.5em;	
+	display:block;
+	margin : 0.4em 0.4em 0.4em 0.4em;
+	padding: 0.25em 0.25em 0.25em 0.25em;
+	text-align: center;
+}
+#mobBack a {
+	color:black;
+	top:-.2em;
+	position:relative;
+}
+#mobBack {
+	position: absolute;
+	z-index: 1;
+	height: .7em;
+	font-size: 1.5em;
+	top:0;
+	left: 0;	
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align:center;
+}
+#back {
+	font-size: 90%;
+	position: relative;
+}

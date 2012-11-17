@@ -1,0 +1,237 @@
+
+<HTML> 
+  <HEAD> 
+    <TITLE>Phylo</TITLE> 
+    <style type="text/css" MEDIA=screen> 
+      <!--
+   	  a:link { color: #898989; text-decoration: bold}
+   	  a:visited { color: #898989; text-decoration: bold}
+   	  a:active { color: #898989; text-decoration: bold}
+	-->
+    </style> 
+    
+    <script type="text/javascript"> 
+      (function() {
+      var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'http://widgets.digg.com/buttons.js';
+      s1.parentNode.insertBefore(s, s1);
+      })();
+    </script> 
+    
+  </HEAD>	
+  <BODY bgcolor="#111111"> 
+    <P>&nbsp;</P> 
+    <TABLE width="900" align="center" border=0 cellpadding="10"> 
+      <TR> 
+	<TD> 
+	  <TABLE width="900" align="center" bgcolor="white" cellpadding="50" style="border-width: 1px; border-style: dashed; border-color: #666666" background="images/bg.png"> 
+	    
+	    <TR> 
+	      
+	      <TD> 
+		<center> 
+		  <object width="700" height="150"> 
+		    <param name="movie" value="images/banner.swf"> 
+		    <param name="wmode" value="transparent"> 
+		    <embed src="images/banner.swf" width="700" height="150" wmode="transparent"> 
+		    </embed> 
+		  </object> 
+		</center> 
+		<HR style="height: 2px" color="#696969"/> 
+		<P> 
+		  <FONT face="verdana" size=3 color="#F83823">Frequently Asked Questions</font> 
+		<P><Font face="verdana" size=2 color="#898989">
+		    <UL>
+		      <LI><a href="#noload">Why is the screen just blank after I select a level?</a></LI>
+		      <LI><a href="#nologin">Im trying to login/register and all I see is a spinning thing. Why?</a></LI>
+		      <LI><a href="#rectangle">I hit play and all I see is a white rectangle. What's going on?!</a></LI>
+		      <LI><a href="#app">Why don't you guys make an app for the iPhone/iPod/iPad/Android?</a></LI>
+		      <LI><a href="#scoring">I don't understand the scoring scheme. Could you explain it a little more in-depth?</a></LI>
+		      <LI><a href="#stats">When I hover my mouse over the stats, they are all zero. Why don't you fix this bug?!</a></LI>	
+		      <LI><a href="#instant_score">Why is my alignment not evaluated instantly?</a></LI>
+		      <LI><a href="#data_origin">How are your puzzles built?</a></LI>
+		      <LI><a href="#whats_next">What are you doing with my solutions?</a></LI>
+		      <LI><a href="#more_example">I still dont get it. Can you show us how to complete a full puzzle?</a></LI>
+		    </UL>
+		    <P>&nbsp;</P>  
+		    
+		    
+ 		    <B><U><a name="noload">Why is the screen just blank after I select a level?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;This is most likely due to high traffic. If this occurs, our 
+		      server is probably overloaded. Wait a little bit and try again.
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="nologin">Im trying to login/register and all I see is a spinning thing. Why?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;This is most likely due to high traffic. If this occurs, our 
+		      server is probably overloaded. Wait a little bit and try again.
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="rectangle">I hit play and all I see is a white rectangle. What's going on?!</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Try clearing your browser cache, and pressing refresh. We've updated the server and some 
+		      settings on the app, and your browser might have cached an old version of the file. If this doesn't work, try out the french
+		      version and see if you have the same problem. If you're still having difficulties, please send us an email with your relevent 
+		      information (browser, flash player version, and anything else that might be useful). Thank you for your patience. 
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="app">Why don't you guys make an app for the iPhone/iPod/iPad/Android?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;We're working on it.
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="scoring">I don't understand the scoring scheme. Could you explain it a little more in-depth?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp; First I'll explain what an ancestral sequence is: Consider a simple example where we only
+		      have two species, say A and B. Their phylogenetic tree would consist of three nodes - one for species A, one for B, and
+		      one for their hypothetical common ancestor. Suppose we wanted to know what the genetic sequence of the ancestor looked like.
+		      It would make sense that this sequence was somehow related to both species A and B, since A and B are its descendants. We can
+		      infer the most <I>probable</I> sequence for this ancestor using 
+		      <a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Fitch's Algorithm</a> (See section 11.18.3),
+		      and this is exactly what Phylo does. Each time your current alignment is evaluated, these ancestral sequences are generated for ALL nodes of 
+		      of the tree, given your current alignment. 
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Now I'll talk about how we come up with some numbers. 
+		      The way we compare the sequences is referred to as "the affine gap model" and works as follows: for every match, we increase the score by some amount (in our case, +1),
+		      and likewise for every mismatch, we decrease the score by some amount (and again in our case, -1). What we mean by a match or mismatch is comparing the color in a
+		      common column between the ancestor and its child; a column where both have the same color is a match, and a column where the colors differ is a mismatch. 
+		      <BR>Gaps are a little different. A gap is opened at the first location where one sequence has a blank spot, and the other does not. Every subsequent blank space directly
+		      adjacent to another blank spot is referred to as a gap extension. A gap only lasts as long as one sequences has consecutive gaps where the other does not. <B>Note that
+			columns where both species have a gap are ignored. </B> Gap openings
+		      are punished with a 5 point decrease, while an extension only with a 1 point decrease.
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;So now it's time to explain exactly how the scoring works. Starting at the root of the tree (the very top - in this case, the hypothetical common ancestor of 
+		      all species) we compare that ancestral sequence with its left child (the sequence directly below it in the tree, on the left), and then with its right child, using
+		      the affine gap model just mentioned. We then proceed to the left child, repeat this process, and then proceed to the right child, and repeat this process. That is, 
+		      we compare the left child with <I>its</I> left and right children, and the right child with <I>its</I> left and right children. We continue this process until every node
+		      of the tree has been compared with its children (provided they have any. Note that the actual sequences you are aligning do not have any children in the tree). 
+		      <BR><B>Your score is then the sum of all such comparisons.</B> It should be noted that small changes in closely related species have a large impact on the overall score; their 
+		      common ancestor will be directly affected, as will its ancestor, etc. Because of this, you should focus the most on aligning species that are direct siblings in the tree (have a direct common ancestor). 
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Let us return back to our previous example with species A and B. Suppose the alignment looked something like this:
+		      
+		      <font size="3">
+			
+			<pre> 
+Species A: ACG--TT
+Species B: ACGTTTA
+			</pre>
+			
+		      </font>								Then the tree with the ancestral sequence and the sequences of A and B might look like:
+<font size="3">
+  
+  <pre> 
+        ACG--TT
+       /
+ACGTTTT
+       \
+        ACGTTTA
+  </pre>
+  
+</font>
+(If this is unclear, please refer to <a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Fitch's Algorithm</a>  - section 11.18.3). 
+<BR>So let's calculate the score for this alignment. We'll start by comparing species A with the ancestral sequence. We have 5 matches (columns 1, 2,3, 6, 7), no mismatches, one gap open (column 4), and one gap extension (column 5). This gives a total of:
+<font size="3">
+  <pre> 
+(5 * 1) + (0 * -1) + (1 * -5) + (1 * -1) = -1
+  </pre>
+</font> 
+<BR> For the comparison of species B with the ancestor, we have 6 matches (columns 1 - 6), 1 mismatch (last column), and no gap opens or extensions. This score is then
+<font size="3">
+  <pre>
+(6 * 1) + (1 * -1) = 5
+  </pre>
+</font> 
+<BR>The <I>total</I> score for this alignment is then just
+<font size="3">
+  <pre> 
+(comparison with A) + (comparison with B) 
+= -1 + 5 
+= 4
+  </pre>
+</font>
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="stats">When I hover my mouse over the stats, they are all zero. Why don't you fix this bug?!</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;To see stats, click on a node of a tree. This will give you all the statistics you need to know 
+		      about the alignment between the ancestral sequence represented by that node, and its two children (see <a href="#scoring">scoring</a>).
+		      You can select multiple nodes. You can select multiple nodes quickly by drawing a box around them with shift + click and drag.  
+		      
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="instant_score">Why is my alignment not evaluated instantly?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;You can always have your alignment evaluated instantly by clicking the "Score now" button. The reason the score 
+		      isn't evaluated in real time is for two reasons:
+		      <UL>
+			<LI>Evaluating an alignment isn't trivial. There are a lot of things that must be computed (see <a href="scoring">scoring</a>). Evaluating
+			  an alignment between 8 species, for example, would cause performance issues on some older machines.</LI> 
+			<LI>It adds an element of strategy to the gameplay. If the score were to be calculated in real time, you could just randomely move stuff around
+			  until a star appears. The point of having you wait, or press the "Score now" button, is that we want you to really think about your moves
+			  and be able to see and understand the consequences of certain modifications to your alignment.</LI>
+		      </UL>   
+		      
+		      
+		    <P>&nbsp;</P> 
+
+ 		    <B><U><a name="data_origin">How are your puzzles built?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;All our data come from the
+		      <a href="http://genome.ucsc.edu/">UCSC Genome Browser</a>, which provides alignments
+		      of genomes computed with classical algorithms. We extracted from these alignments,
+		      <a href="http://en.wikipedia.org/wiki/Promoter_%28biology%29">promoter regions</a>
+		      (a region of the genome controlling the gene expression) which are poorly aligned,
+		      and we transformed them into our puzzles.
+		      
+
+
+		    <P>&nbsp;</P> 
+
+ 		    <B><U><a name="whats_next">What are you doing with my solutions?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Once completed your puzzles are re-inserted into the complete
+		      genome alignment and re-evaluated with a more sophisticated scoring system. If your
+		      solution improves the computer score, we incorporate it into the alignment.<br/>
+		      Phylo is absolutely non-profit. All results will be publicly available and nothing
+		      will be sold. Once completed, the improved genome alignments will be available on our
+		      website.
+
+		    <P>&nbsp;</P> 
+
+ 		    <B><U><a name="more_example">I still dont get it. Can you show us how to complete a full puzzle?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;You're right. There's nothing better better than an example of
+		      the real thing. 
+		    <a href="http://csb.cs.mcgill.ca/phylo/tutorial_1946.pdf">Click on this link to download
+		    a pdf of a complete tutorial</a> showing how to compute the scores on complex puzzles and
+		    advance into the game. The tutorial also gives you some tricks to improve your tactics.
+		    Have fun!<br/>
+		    URL: <a href="http://csb.cs.mcgill.ca/phylo/tutorial_1946.pdf">http://csb.cs.mcgill.ca/phylo/tutorial_1946.pdf</a>
+
+		    <P>&nbsp;</P> 
+
+		    <HR style="height: 2px" color="#696969"/> 
+		    <P> 
+		      <DIV align="center"> 
+			<script src="http://www.stumbleupon.com/hostedbadge.php?s=4"></script>&nbsp;
+			<a class="DiggThisButton DiggIcon" href="http://digg.com/submit?url=http%3A//phylo.cs.mcgill.ca" rev="news, general_sciences, educational, playable_web_games"></a> 
+			<span style="display:none"> 
+			  A challenging, fun flash game that lets you contribute to science. Align DNA of the human genome to map diseases. A human computing approach to solving the multiple sequence alignment problem.
+			</span>&nbsp;
+			<a href="http://reddit.com/submit" onclick="window.location = 'http://reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="http://reddit.com/static/spreddit1.gif" alt="submit to reddit" border="0" /> </a> 
+			
+						
+		  </font> 
+	      </TD> 
+	    </TR> 
+	  </TABLE> 
+	</TD> 
+      </TR> 
+      <TR> 
+	<TD> 
+	  <div align="center"><font face="verdana" color="#CCCCCC" size=1>Alex Kawrykow and Gary Roumanis</font></div> 
+	  <div align="right"><a href="http://www.mcgill.ca"><IMG src="images/crest.png" WIDTH=40></a></div> 
+	</TD> 
+      </TR> 
+    </TABLE> 
+  </BODY> 
+</HTML> 

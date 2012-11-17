@@ -1,0 +1,175 @@
+@import url("http://fonts.googleapis.com/css?family=Raleway:100");
+
+/* Main */
+
+body {
+	background-image: url(../static/light_paper.png);
+	font-family:"Lucida Grande",Helvetica,Arial,sans-serif;
+}
+
+p {
+	color:#eee;
+	font-size:14px;
+	text-shadow: #121523 0px 2px 2px;
+}
+
+a {
+	text-decoration:none;
+	color:#f17b22;
+}
+
+a:hover {
+	border-bottom:dotted 1px #f17b22;
+}
+
+.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+#canvas {
+	margin-top:0px;
+	width:100%;
+}
+
+#content_wrap{
+	width:1000px;
+	background:url(../static/dark_paper.png);
+	-moz-background-size:100% 100%; /* Firefox 3.6 */
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	padding:50px;
+}
+
+#content{
+	line-height:20px;
+}
+
+#content h1 {
+	font-family: 'Raleway', sans-serif;
+	color: #ccc;
+	margin-bottom:18px;
+}
+
+#content h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size:20px;
+	color: #ccc;
+	margin-bottom:18px;
+}
+
+#content ul {
+	list-style-type: none;
+}
+
+
+#game{
+	width:800px;
+}
+
+#line {
+	margin-top:30px;
+	height:3px;
+	width:1000px;
+}
+
+#line .dark {
+	background-color:#000;
+	height:1px;
+}
+
+#line .light {
+	background-color:#2e2e2e;
+	height:2px;
+}
+
+#section {
+	width:200px;
+	height:125px;
+	display:block;
+	float:left;
+	line-height:25px;
+	padding:10px 20px;
+}
+
+#author {
+	clear:both;
+	text-align:center;
+	font-size:12px;
+	width:100%;
+	height:20px;
+	margin-top:5px;
+	bottom:0px;
+	color:white;
+	background-color:black;
+}
+
+#author p {
+	margin-top:5px;
+}
+
+#content li, li a, p {
+	color:#eee;
+	font-size:14px;
+	text-shadow: #121523 0px 2px 2px;
+}
+
+footer {
+	width:1100px;
+}
+
+/* Page specific */
+
+/* rankings.html */
+#ranking {
+	text-align:center;
+}
+#ranking .menu a {
+	text-shadow: none; 
+}
+#ranking .menu a:hover{
+	color:#222;
+	text-shadow:none;
+	text-decoration:none;
+	border:none;
+}
+
+#ranking .menu li ul li a {
+	color: #444;
+	text-shadow:none;
+}
+
+/* Button */
+.button {
+   margin-top: 20px;
+   display:block;
+   border-top: 1px solid #faf4cd;
+   background: #f17c22;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f08324), to(#f17c22));
+   background: -webkit-linear-gradient(top, #f08324, #f17c22);
+   background: -moz-linear-gradient(top, #f08324, #f17c22);
+   background: -ms-linear-gradient(top, #f08324, #f17c22);
+   background: -o-linear-gradient(top, #f08324, #f17c22);
+   padding: 18px 36px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 15px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ededed;
+   font-size: 20px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align:center;
+   }
+.button:hover {
+   border-top-color: #f19022;
+   background: #f19022;
+   color: #fff;
+   }
+.button:active {
+   border-top-color: #f06b24;
+   background: #f06b24;
+   }

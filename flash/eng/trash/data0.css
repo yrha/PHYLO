@@ -1,0 +1,54 @@
+body{
+	font-family:"Lucida Grande",Helvetica,Arial,sans-serif;
+}
+
+.menu, .menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.menu {
+    width:250px;
+}
+
+.menu li {
+    margin:0;
+    padding:0;
+    margin-bottom:1px;
+}
+
+.menu a {
+    display:block;
+    padding:2px 5px;
+    color:#FFFFFF;
+    background:#029848;
+    text-decoration:none;
+}
+
+.menu a:hover {
+    background:#F0F0F0;
+    color:#FFA500;
+}
+
+.menu ul li {
+    padding-left:15px;
+}
+
+.menu ul a {
+    background:#D8FAE7;
+    color: #000000;
+}
+
+.hidden {
+    display:none;
+}
+
+td.panel {
+    height:445px;
+    vertical-align:top;
+    padding: 0px 40px 0px 50px;
+}
+
+
+

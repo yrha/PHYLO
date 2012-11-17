@@ -1,0 +1,91 @@
+.info .menu, .info .menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.info .menu {
+    width:250px;
+}
+
+.info .menu li {
+    margin:0;
+    padding:0;
+    margin-bottom:1px;
+}
+
+.info .menu a {
+    border-radius:4px;
+    display:block;
+    padding:2px 5px;
+    color:#FFFFFF;
+    background:#029848;
+    text-decoration:none;
+}
+
+.info .menu a:hover {
+    background:#F0F0F0;
+    color:#FFA500;
+}
+
+.info .menu ul li {
+    padding-left:15px;
+	float: none !important;
+}
+
+.info .menu ul a {
+    background:#D8FAE7;
+    color: #000000;
+}
+
+.info .livemenu, .info .menu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.info .livemenu {
+    width:250px;
+}
+
+.info .livemenu li {
+    margin:0;
+    padding:0;
+    margin-bottom:1px;
+}
+
+.info .livemenu a {
+    border-radius:4px;
+    display:block;
+    padding:2px 5px;
+    color:#FFFFFF;
+    background:#71B3E0;
+    text-decoration:none;
+}
+
+.info .livemenu a:hover {
+    background:#F0F0F0;
+    color:#FFA500;
+}
+
+.info .livemenu ul li {
+    padding-left:15px;
+}
+
+.info .livemenu ul a {
+    background:#DAEDFA;
+    color: #000000;
+}
+
+.info .hidden {
+    display:none;
+}
+
+.info td.panel {
+    height:445px;
+    vertical-align:top;
+    padding: 0px 40px 0px 50px;
+}
+
+
+

@@ -1,0 +1,75 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+html { background: url(images/light_paper.png) black; }
+body { 
+	font: 14px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;	
+	min-height: 350px;
+}
+
+#logo {
+	background: url(images/logo.png) no-repeat center;
+	width: 700px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+#slide-wrap { width: 720px; margin: 0 auto; padding:0px; }
+
+#well {
+	background: url(images/slidebg.png) no-repeat left;
+	overflow: hidden; 
+	-webkit-user-select: none;
+	height: 120px;
+	width: 700px;
+	padding: 0;
+}
+
+h2 {
+  background: -moz-linear-gradient(left, #d0d0d0, 0.4, #d0d0d0, 0.5, white, 0.6, #d0d0d0, #4d0d0d0); 
+  background: -webkit-gradient(linear,left top,right top,color-stop(0, #d0d0d0),color-stop(0.4, #d0d0d0),color-stop(0.5, white),color-stop(0.6, #d0d0d0),color-stop(1, #d0d0d0)); 
+  
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  
+  -webkit-animation: slidetounlock 3s infinite;
+  
+  font-size: 40px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  margin-top: 33px;
+  width: 200%;  
+  -webkit-text-size-adjust: none;
+  vertical-align:middle;
+}
+
+h2 #text {
+	top: 50px;
+}
+
+#slider {
+	width: 120px;
+	height: 120px;
+	display: block;
+	top: -33px;
+	float: left;
+	vertical-align: middle;
+	background: url(images/arrow.png) no-repeat 0 10px;
+	margin-right: 150px;
+}
+
+@-webkit-keyframes slidetounlock {
+	0% {
+		background-position: -720px 0;
+	}
+	100%{
+		background-position: 720px 0;
+	}
+}

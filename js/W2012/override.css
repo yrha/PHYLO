@@ -1,0 +1,17 @@
+.active a {
+	color: black !important;
+}
+
+.info {
+	background-image: url(http://phylo.cs.mcgill.ca/static/dark_paper.png);
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	position:relative;
+	padding: 40px;
+	display:none;
+}
+/*
+.info iframe {
+	position:relative;
+	left:70px;
+} */

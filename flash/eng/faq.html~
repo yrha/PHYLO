@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+  </head>
+  <body>
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+    
+    <div id="content">
+
+
+		    <UL>
+		      <LI><a href="#scoring">I don't understand the scoring scheme. Could you explain it a little more in-depth?</a></LI>
+		      <LI><a href="#stats">When I hover my mouse over the stats, they are all zero. Why don't you fix this bug?!</a></LI>	
+		      <LI><a href="#instant_score">Why is my alignment not evaluated instantly?</a></LI>
+		      <LI><a href="#data_origin">How are your puzzles built?</a></LI>
+		      <LI><a href="#whats_next">What are you doing with my solutions?</a></LI>
+		    </UL>
+            
+		    <P>&nbsp;</P>  
+		    
+		    		    
+		    <B><U><a name="scoring">I don't understand the scoring scheme. Could you explain it a little more in-depth?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp; First I'll explain what an ancestral sequence is: Consider a simple example where we only
+		      have two species, say A and B. Their phylogenetic tree would consist of three nodes - one for species A, one for B, and
+		      one for their hypothetical common ancestor. Suppose we wanted to know what the genetic sequence of the ancestor looked like.
+		      It would make sense that this sequence was somehow related to both species A and B, since A and B are its descendants. We can
+		      infer the most <I>probable</I> sequence for this ancestor using 
+		      <a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Fitch's Algorithm</a> (See section 11.18.3),
+		      and this is exactly what Phylo does. Each time your current alignment is evaluated, these ancestral sequences are generated for ALL nodes of 
+		      of the tree, given your current alignment. 
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Now I'll talk about how we come up with some numbers. 
+		      The way we compare the sequences is referred to as "the affine gap model" and works as follows: for every match, we increase the score by some amount (in our case, +1),
+		      and likewise for every mismatch, we decrease the score by some amount (and again in our case, -1). What we mean by a match or mismatch is comparing the color in a
+		      common column between the ancestor and its child; a column where both have the same color is a match, and a column where the colors differ is a mismatch. 
+		      <BR>Gaps are a little different. A gap is opened at the first location where one sequence has a blank spot, and the other does not. Every subsequent blank space directly
+		      adjacent to another blank spot is referred to as a gap extension. A gap only lasts as long as one sequences has consecutive gaps where the other does not. <B>Note that
+			columns where both species have a gap are ignored. </B> Gap openings
+		      are punished with a 5 point decrease, while an extension only with a 1 point decrease.
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;So now it's time to explain exactly how the scoring works. Starting at the root of the tree (the very top - in this case, the hypothetical common ancestor of 
+		      all species) we compare that ancestral sequence with its left child (the sequence directly below it in the tree, on the left), and then with its right child, using
+		      the affine gap model just mentioned. We then proceed to the left child, repeat this process, and then proceed to the right child, and repeat this process. That is, 
+		      we compare the left child with <I>its</I> left and right children, and the right child with <I>its</I> left and right children. We continue this process until every node
+		      of the tree has been compared with its children (provided they have any. Note that the actual sequences you are aligning do not have any children in the tree). 
+		      <BR><B>Your score is then the sum of all such comparisons.</B> It should be noted that small changes in closely related species have a large impact on the overall score; their 
+		      common ancestor will be directly affected, as will its ancestor, etc. Because of this, you should focus the most on aligning species that are direct siblings in the tree (have a direct common ancestor). 
+		      
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Let us return back to our previous example with species A and B. Suppose the alignment looked something like this:
+		      
+			<pre> 
+Species A: ACG--TT
+Species B: ACGTTTA
+			</pre>
+			
+            Then the tree with the ancestral sequence and the sequences of A and B might look like:
+  
+  <pre> 
+        ACG--TT
+       /
+ACGTTTT
+       \
+        ACGTTTA
+  </pre>
+  
+(If this is unclear, please refer to <a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Fitch's Algorithm</a>  - section 11.18.3). 
+<BR>So let's calculate the score for this alignment. We'll start by comparing species A with the ancestral sequence. We have 5 matches (columns 1, 2,3, 6, 7), no mismatches, one gap open (column 4), and one gap extension (column 5). This gives a total of:
+  <pre> 
+(5 * 1) + (0 * -1) + (1 * -5) + (1 * -1) = -1
+  </pre>
+<BR> For the comparison of species B with the ancestor, we have 6 matches (columns 1 - 6), 1 mismatch (last column), and no gap opens or extensions. This score is then
+  <pre>
+(6 * 1) + (1 * -1) = 5
+  </pre>
+<BR>The <I>total</I> score for this alignment is then just
+  <pre> 
+(comparison with A) + (comparison with B) 
+= -1 + 5 
+= 4
+  </pre>
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="stats">When I hover my mouse over the stats, they are all zero. Why don't you fix this bug?!</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;To see stats, click on a node of a tree. This will give you all the statistics you need to know 
+		      about the alignment between the ancestral sequence represented by that node, and its two children (see <a href="#scoring">scoring</a>).
+		      You can select multiple nodes. You can select multiple nodes quickly by drawing a box around them with shift + click and drag.  
+		      
+		      
+		    <P>&nbsp;</P>
+		    
+		    <B><U><a name="instant_score">Why is my alignment not evaluated instantly?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;You can always have your alignment evaluated instantly by clicking the "Score now" button. The reason the score 
+		      isn't evaluated in real time is for two reasons:
+		      <UL>
+			<LI>Evaluating an alignment isn't trivial. There are a lot of things that must be computed (see <a href="scoring">scoring</a>). Evaluating
+			  an alignment between 8 species, for example, would cause performance issues on some older machines.</LI> 
+			<LI>It adds an element of strategy to the gameplay. If the score were to be calculated in real time, you could just randomely move stuff around
+			  until a star appears. The point of having you wait, or press the "Score now" button, is that we want you to really think about your moves
+			  and be able to see and understand the consequences of certain modifications to your alignment.</LI>
+		      </UL>   
+		      
+		      
+		    <P>&nbsp;</P> 
+
+ 		    <B><U><a name="data_origin">How are your puzzles built?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;All our data come from the
+		      <a href="http://genome.ucsc.edu/">UCSC Genome Browser</a>, which provides alignments
+		      of genomes computed with classical algorithms. We extracted from these alignments,
+		      <a href="http://en.wikipedia.org/wiki/Promoter_%28biology%29">promoter regions</a>
+		      (a region of the genome controlling the gene expression) which are poorly aligned,
+		      and we transformed them into our puzzles.
+		      
+
+
+		    <P>&nbsp;</P> 
+
+ 		    <B><U><a name="whats_next">What are you doing with my solutions?</a></U></B>
+		    <P>&nbsp;&nbsp;&nbsp;&nbsp;Once completed your puzzles are re-inserted into the complete
+		      genome alignment and re-evaluated with a more sophisticated scoring system. If your
+		      solution improves the computer score, we incorporate it into the alignment.<br/>
+		      Phylo is absolutely non-profit. All results will be publicly available and nothing
+		      will be sold. Once completed, the improved genome alignments will be available on our
+		      website.
+
+    
+    </div>
+    
+    </div>
+  <script type="text/javascript">
+    swfobject.embedSWF("http://phylo.alfredkam.com/flash/Kepler_eng.swf", "flashContent", "800", "400", "10.0", null, {wmode:"transparent"}, null, {name:"flashContent"});       
+  </script>
+	    </div>
+    </div>
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> Phylo is a challenging flash game in which every puzzle completed contributes to mapping diseases within human DNA. Learn <a href="about.html">more</a>.</p>
+    </div>
+    <div id="section">
+      <p> Join the phylo <a href="https://www.facebook.com/groups/127713783941517/">community</a> on facebook or give us a thumbs up: </p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+        </div> 
+    <div id="section">
+        <a href="rankings.html" class="button">Rankings</a>
+    </div>
+    <div id="section">
+        <a href="results.html" class="button">Results</a>
+    </div>
+    </footer>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</html>

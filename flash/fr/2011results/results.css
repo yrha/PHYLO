@@ -1,0 +1,32 @@
+body {
+	font-family: 'Century Gothic', Arial, Sans-Serif;
+    font-size: 14px;
+}
+
+a{
+	text-decoration:none;
+	color:#057fac;
+}
+a:hover{
+	text-decoration:none;
+	color:#999;
+}
+h1{
+	font-size:140%;
+	margin:0 20px;
+	line-height:80px;	
+}
+#container{
+	margin:0 auto;
+	width:260px;
+	padding-bottom:20px;
+}
+#content{
+margin:0 20px;
+}
+p{	
+	margin:0 auto;
+	width:260px;
+	padding:1em 0;
+}
+

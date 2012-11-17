@@ -1,0 +1,3 @@
+Options +Followsymlinks 
+RewriteEngine On
+RewriteRule ^(.*)\.php$ http://phylo.alfredkam.com/phpdb/$1.php [R,NC]

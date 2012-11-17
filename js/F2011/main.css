@@ -1,0 +1,130 @@
+/*
+
+About: Main Css
+*/
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+
+
+body {
+	background-image:url("http://phylo.cs.mcgill.ca/beta/static/light_paper.png");
+	background-repeat: repeat;
+	font-family: 'Rokkitt', sans-serif;
+/*	font-family: century gothic;*/
+	color:white;
+	z-index:0;
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	/*
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	*/
+}
+
+a:link { text-decoration:none; color:#FFFFFF;} 
+a:active { text-decoration:none;}
+a:hover { text-decoration:none;}
+a:visited { text-decoration:none;}
+a:-webkit-any-link {
+	text-decoration:none;
+	color:white;
+}
+.navContent {
+	text-decoration:none;
+	color: #FFFFFF;
+	z-index:10;
+}
+p.footNote a{
+	text-decoration:none;
+	color: #FFFFFF;
+
+}
+nav.menu {
+	border-bottom-style: solid;
+	border-width: 1px;
+	margin: 0px;
+	position: absolute;
+	width : 100%;
+	top: 1.1em;
+	height: 1.5em;
+	min-width: 688px;
+}
+
+.desktopLog {
+	position: relative;
+	font-size: 130%;
+	top: -0.5em;
+}
+
+a.nav {
+	position: relative;
+	top: 0.3em;
+	height: 1.0em;
+	width: 4.0em;
+	padding-right: 2.5em;
+	left: 1.0em;
+	display:inline;
+}
+
+a#log {
+	position: absolute;
+	right: 2.0em;
+}
+pre.navBorder {
+	position: absolute;
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	top:-1.6em;
+	height: 0.5em;
+	width: 4.0em;
+	display:inline;
+}
+p.navContent {
+	position: relative;
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	height: 0.5em;
+	width: 4.0em;
+	top: -0.5em;
+	text-align: center;
+	display:inline;
+	font-size: 130%;
+
+}
+.underline {
+	text-decoration: underline;
+}
+select {
+	font: normal 13px Arial, SansSerif, Verdana; color: black;
+}
+select.lang {
+	color: black;
+	background:white;
+	background-color:white;
+	border-width:4px;
+	font-size: 80%;
+	position: relative;
+	z-index:10;
+}
+
+p.addBorder {
+	padding: 0.1em .2em 0.1em .2em;
+	border-radius: .2em;
+	-moz-border-radius: .2em;
+	-webkit-border-radius:..2em;
+}
+p.addBorder-tablet {
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	-webkit-border-radius:.2em;
+}
+
+
+/* patches .... */
+.menuSqueezer {
+	max-width:1473px;
+	position: relative;
+}

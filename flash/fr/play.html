@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+  </head>
+  <body>
+<!-- analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27559307-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end of analytics -->
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+      <div id="game" class="center">
+        <div style="width: 960px; margin: 0 auto;">
+  <div id="flashContent">
+    <h1>You need at least Flash Player 10.0 to view this page.</h1>
+    <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+  </div>
+  <div style="text-align:left;"><a href="liveranking.html">Classement en direct</a></div>
+  </div>
+  <script type="text/javascript">
+    swfobject.embedSWF("Kepler_frn.swf", "flashContent", "800", "400", "10.0", null, {wmode:"transparent"}, null, {name:"flashContent"});       
+  </script>
+	    </div>
+    </div>
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+        <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> En jouant &agrave; Phylo, vous aidez &agrave; rep&eacute;rer des maladies g&eacute;netiques dans l'ADN humain. En savoir <a href="about.html">plus</a>.</p>
+    </div>
+    <div id="section">
+      <p> Faites partie de la <a href="https://www.facebook.com/groups/127713783941517/">communaut&eacute;</a> de Phylo sur facebook ou soutenez notre initiative avec un "j'aime":</p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+        </div> 
+    <div id="section">
+        <a href="rankings.html" class="button">Classement</a>
+    </div>
+    <div id="section">
+        <a href="results.html" class="button">R&eacute;sultats</a>
+    </div>
+    </footer>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+  <!-- <script type='text/javascript' src='../oops.js'></script> -->
+</html>

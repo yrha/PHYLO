@@ -1,0 +1,80 @@
+<html>
+<link rel='stylesheet' href='../content/css/ranking.css'>
+<div id="content_wrap" class="center" style="left:0px">
+<div style="text-align:center;">
+
+<h1>2011 Phylo Ranking</h1>
+
+
+<div class="rankings">
+<div class="panel">
+
+<ul class="rankMenu">
+<li><a href="#">Live ranking</a>
+<ul>
+    <li><a href="#" onclick="return frame.load('../phpdb/rankingsget.php?type=monthly')" target="rankingframe">Last 30 days</a></li>
+    <li><a href="#" onclick="return frame.load('../phpdb/rankingsget.php?')" target="rankingframe">Last 7 days</a></li>
+</ul>
+</li>
+</ul>
+
+<br/>
+
+<ul class="rankMenu">
+<li><a href="#">2011 General ranking</a>
+<ul>
+    <li><a href="#" onclick="return frame.load('../content/en/2011ranking/all_categories.html')" target="rankingframe">2011 total</a></li>
+    <li><a href="#" onclick="return frame.load('../content/en/2011ranking/first_contributor_all_categories.html')" target="rankingframe">First contributor</a></li>
+</ul>
+</li>
+
+<li><a href="#">Ranking per disease category</a>
+<ul>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/blood_and_immune_system.html')" target="rankingframe">Blood and immune system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/bone_and_skin.html" target="rankingframe')">Bone and skin</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/brain_and_nervous_system.html')" target="rankingframe">Brain and nervous system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/cancer.html" target="rankingframe')">Cancer</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/digestive_system.html')" target="rankingframe">Digestive system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/heart_and_circulatory_system.html')" target="rankingframe">Heart and circulatory system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/metabolic_disorders.html')" target="rankingframe">Metabolic disorders</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/muscles.html')" target="rankingframe">Muscles</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/reproduction_system.html')" target="rankingframe">Reproduction system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/respiratory_system.html')" target="rankingframe">Respiratory system</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/sensory_system.html')" target="rankingframe">Sensory system</a></li>
+</ul>
+</li>
+
+<li><a href="#">Information</a>
+<ul>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/disease_catalog.html')" target="rankingframe">Disease classification</a></li>
+   <li><a href="#" onclick="return frame.load('../content/en/2011ranking/scoring.html')" target="rankingframe">Scoring system</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="rankingframe">
+<iframe id="rankingframe" name="rankingframe" src="../phpdb/rankingsget.php?type=monthly"></iframe>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="line" class="center">
+<div class="dark"></div>
+<div class="light"></div>
+</div>
+<script src='../content/js/togglemenu.js' type='text/javascript'></script>
+<script>
+	(function() {
+		function g() {}
+		g.prototype.load = function(url) {
+			document.getElementById('rankingframe').src=url;
+			return false;
+		}
+		var proto = g.prototype,
+			attr = [["load",proto.load]];
+		common.exportSingleton("frame",g,attr);
+	})();
+</script>
+</html>

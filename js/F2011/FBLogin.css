@@ -1,0 +1,173 @@
+/*
+developed by: Kira Chu(www.cs.mcgill.ca/~cwu65).McGill MCB
+supervisors: Jerome Waldispuhl, Mathieu Blanchette, McGill University
+Type: Desktop/Tablet
+Supported platform: Chrome, Safari, Firefox
+About:Mcgill Phylo Project: Facebook, Local Database  User Connection css
+Copyright Chu Wu and McGill MCB
+Version 0.0.2
+Last Updated Sept 2011
+
+*/
+
+
+/*lighbox login :reference 
+http://www.emanueleferonato.com/2007/08/22/create-a-lightbox-effect-only-with-css-no-javascript-needed/
+----------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Judson:700);
+
+ul,li{
+	list-style:none;
+	-webkit-padding-start:0px;
+	-moz-padding-start:0px;
+	padding-start:0px;
+
+}
+.black_overlay{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color:black;
+	z-index:180;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);/*IE*/
+}
+/*ConnectS:white_content need to be resize/absoulte*/
+.white_content {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: 400px;
+	color:white;
+	background: url('./elastoplast.png');
+
+	
+	-webkit-border-top-left-radius:25px;
+	-moz-border-radius-topleft:25px;
+	border-top-left-radius:25px;
+
+	-webkit-border-bottom-right-radius:25px;
+	-moz-border-radius-bottomright:25px;
+	border-bottom-right-radius:25px;
+	
+	z-index:181;
+	
+}
+.white_content:before {
+	content:"";
+	display:block;
+	position:absolute;
+	top:4%;
+	left:4%;
+	width:92%;
+	height:92%;
+	background:gray;
+	
+	-webkit-border-radius:25px;
+	-moz-border-radius:25px;
+	border-radius:25px;
+	opacity:0.7;
+	z-index:-3;
+
+
+}
+#connectS{
+	display:block;
+	margin: 50px auto;
+	width:350px;
+	z-index:10;
+}
+
+#connectS li{
+	display:block;
+	margin:5px auto;
+	width:250px;
+
+
+}
+#MCBlogin{
+	display:none;
+}
+#emaiLG{
+	display:block;
+	margin: 5px auto;
+}
+#MCBregister{
+	display:none;
+}
+
+/*connection button*/
+.cChoice{
+	display:block;
+	margin:0 auto;
+	width:100px;
+}
+li #OO{
+	display:block;
+	margin:5px auto;
+	width:200px;
+	color:white;
+}
+/*changes*/
+.sub{
+	display:block;
+	margin: 10px auto 0px;
+	width:150px;
+	height:32px;
+	border:none;
+	font-family: 'Judson', serif;
+	font-size:15px;
+	
+	background:#cdcdc1;
+	border:1px solid gray; 
+	border-radius: 5px;
+
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+input.dInput{
+	display:block;
+	height:20px;
+	border:1px gray solid:
+	
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	
+}
+
+
+#faceB_login_B{
+	display:block;
+	margin:0 auto;
+	width:24px;
+	height:24px;
+	border:none;
+	background:url('./facebook.png') center center;
+}
+#log{
+	font-size:14px;
+}
+#screenT{
+	font-family: 'Judson', serif;
+	color:black;
+	font-size:20px;
+}
+
+#lSubmit:hover, #rSubmit:hover, #guestL:hover{
+ background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(1, #00ffff),
+        color-stop(0, #1e90ff)
+    );
+border:1px gray solid;
+}

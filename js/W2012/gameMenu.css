@@ -1,0 +1,144 @@
+div#gameMenu {
+	position: absolute;
+	z-index: 170;	
+	left: 27%;	
+	min-width:40em;
+	width: 40em;
+	min-height:23em;
+	height: 23em;
+	top: 10%;
+	background: url(http://phylo.cs.mcgill.ca/beta/static/dark_paper.png) no-repeat;
+	padding : 2em 0em 2em 1em;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+div#gameType {
+	position:relative;
+	float: left;
+	width: 8em;	
+}
+
+div.gameTab {
+	position: relative;
+	padding-top: 2%;
+	padding: 0.5em 1em 1.5em 0.5em;
+	margin-left: 5px;
+	font-size: 1.2em;
+}
+
+div#gameContent {
+	position: relative;
+	width:65%;
+	float: left;
+	height:23em;
+}
+
+a.gameDisease {
+	position: relative;
+	display: inline;
+	height: 10%;
+	width: 10%;
+	font-size: 110%;
+/*	top: 35%; */
+	left: 10%;
+	padding: 2% 4% 2% 4%;
+	margin: 0px 2% 0px 2%;	
+}
+	
+a.gameOpt {
+	position: relative;
+	display: inline;
+	top: 5em;
+	height: 10%;
+	width: 10%;
+	font-size: 110%;
+/*	top: 35%; */
+	left: 10%;
+	padding: 2% 4% 2% 4%;
+	margin: 0px 2% 0px 2%;	
+	
+}
+div#gline {
+	position:relative;
+	display:inline;
+	border-top-style:solid;
+	border-color: white;
+	border-width: 1px;
+	width: 50%;
+	margin-top:3%;
+	margin-left:3%;
+	margin-right:3%;
+}
+div#gameFootNote {
+	position: relative;
+	z-index: 171;
+	top: 8em;
+	left:15%;
+}
+.g-line {
+	float: left;	
+}
+#game-level-submit {
+	position: relative;
+	padding: 0.05em 0.5em 0.05em 0.5em;
+	background-color: white;
+	color: #484848;
+}
+#game-disease-submit {
+	position: relative;
+	left: 25%;
+	top: 0.2em;
+	background-color: white;
+	padding: 1px 1px 1px 1px;
+	color: #484848;
+}
+select {
+	font-size: 2.0em;
+}
+label.end-color {
+	color: red;
+}
+#splashPageWrapper {
+	width:1473px;
+	min-widtH:883.8px;
+	height: 500px;
+	min-height:300px;
+	top:2.9em;
+	position:absolute;
+}
+.phylo_logo1{
+	top:-2.9em;
+	position:relative;
+	z-index: 1;
+}
+.phylo_logo2{
+	position:absolute;
+	left:5px;
+	top:0;
+	
+	z-index:2;
+	min-height: 10em;
+	min-width:30em;
+	width: 30em;
+}
+.phylo_play {
+	position :absolute;
+	top:50%;
+	left:45%;
+	width:5%;
+	text-align:center;
+	height:5%;
+	padding:10px;
+	z-Index : 10;
+	font-Size : 130%;
+	border-radius : 0.5em;
+	-webkit-border-radius : 0.5em;
+	-moz-border-raidus : 0.5em;
+	-khtml-border-radius : 0.5em;
+	background-color : #71b2e2;
+}
+.game-input {
+	border: 1px;
+	font-size:1.5em;
+}

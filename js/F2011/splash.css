@@ -1,0 +1,67 @@
+
+body {
+	background-image:url("http://phylo.cs.mcgill.ca/img/triangles.png");
+	background-repeat: repeat;
+	font-family: century gothic;
+	color:white;
+	z-index:0;
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	margin-top: 10%;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#evolution img {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	width:600px;
+}
+
+#canvas {
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 600px;
+	height:600px;
+}
+
+#languages {
+	background-color:orange;
+}
+
+#red {
+	float:left;
+	width:350px;
+	height:30px;
+	background-color:red;
+	margin: 10px 10px 10px 0px;
+}
+
+.nucleotide{
+	width:50px;
+	height:50px;
+	float:left;
+	margin: 0px 10px;
+}
+
+#blue {
+	background-color:blue;
+}
+
+#purple {
+	background-color:blue;
+}
+
+#green {
+	background-color:blue;
+}
+
+#orange {
+	background-color:blue;
+}
+

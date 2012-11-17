@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+  </head>
+  <body>
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+    
+    <div id="content">
+      <p>
+	<h2>Responsables du projet (Contacts m&eacute;dias et scientifiques):</h2>		    
+		  <UL>
+		    <LI><a href="mailto:jerome.waldispuhl@mcgill.ca">J&eacute;r&ocirc;me Waldisp&uuml;hl</a></LI>
+		    <LI><a href="mailto:blanchem@mcb.mcgill.ca">Mathieu Blanchette</a></LI>
+		  </UL>
+      </p>
+      <p>
+        <h2>Conseiller scientifique</h2>
+        <UL>
+          <LI>Luis Sarmenta</LI>
+        </UL>
+      </p>
+    <p>
+    <h2>&Eacute;quipe de d&eacute;velopement:</h2>
+		  <UL>
+		    <LI><a href="mailto:alfred.kam@mail.mcgill.ca">Alfred Kam</a></LI>
+		    <LI><a href="mailto:daniel.kwak@mail.mcgill.ca">Daniel Kwak</a></LI>
+		    <LI><a href="mailto:clarence@mail.mcgill.ca">Clarence Leung</a></LI>
+		    <LI><a href="mailto:chu.wu2@mail.mcgill.ca">Chu Wu</a></LI>
+		    <LI><a href="mailto:eleyine.zarour@mail.mcgill.ca">Eleyine Zarour</a></LI>
+		  </UL>
+    </p>
+    <p>    
+    <h2>Concepteurs originaux:</h2>
+		  <UL>
+		    <LI><a href="mailto:akawry@cs.mcgill.ca">Alex Kawrykow</a></LI>
+		    <LI><a href="mailto:grouma@cs.mcgill.ca">Gary Roumanis</a></LI>
+		  </UL>
+    </p>
+    <p>
+		<h2>Avec le support de:</h2>
+		  <UL>
+		    <LI><a href="http://www.nserc-crsng.gc.ca/">Conseil de recherches en sciences naturelles et en g&eacute;nie du Canada</a></LI>
+		    <LI><a href="http://www.nokia.com/">Nokia</a></LI>  
+		    <LI><a href="http://www.cs.mcgill.ca/">&Eacute;cole d'informatique de McGill</a></LI>
+		  </UL>
+    </p>
+    <p>
+        <h2>Suivez nous sur:</h2>		
+                  <UL>
+                    <LI><a href="http://www.facebook.com/group.php?gid=127713783941517">Facebook</a></LI>  
+		    <LI><a href="https://plus.google.com/u/0/b/111453047184263548841/111453047184263548841/posts">Google+</a></LI>
+                  </UL>
+    </p>
+    <p>
+		<h2>Musique:</h2>
+        <UL>
+                    <LI>Xavier Garozzo / J&eacute;r&ocirc;me Barel / J&eacute;r&ocirc;me Waldisp&uuml;hl
+                    </LI>  
+                  </UL>
+        <p>
+    </p>
+    <p>
+		<h2>Remerciements:</h2>
+         <UL>
+            <LI>
+		    Andrew Bogecho, Katherine Gombay, Kailesh Mussai, William Raillant-Clark, James Shubin, Ron Simpson.
+            </LI>  
+        </UL>
+    </p>
+    </div>
+    
+    </div>
+	    </div>
+    </div>
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+        <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> En jouant &agrave; Phylo, vous aidez &agrave; rep&eacute;rer des maladies g&eacute;netiques dans l'ADN humain. En savoir <a href="about.html">plus</a>.</p>
+    </div>
+    <div id="section">
+      <p> Faites partie de la <a href="https://www.facebook.com/groups/127713783941517/">communaut&eacute;</a> de Phylo sur facebook ou soutenez notre initiative avec un "j'aime":</p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+        </div> 
+    <div id="section">
+        <a href="rankings.html" class="button">Classement</a>
+    </div>
+    <div id="section">
+        <a href="results.html" class="button">R&eacute;sultats</a>
+    </div>
+    </footer>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</html>

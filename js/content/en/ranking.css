@@ -1,0 +1,59 @@
+h1 {
+  /*  background: #029848;
+	*/
+    left: -4.5em;
+    color: #FFFFFF;
+	position:relative;
+}
+
+/*#rankingframe {
+    width:100%;
+    height:100%;
+}*/
+
+.rankMenu, .rankMenu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.rankMenu {
+    width:250px;
+}
+
+.rankMenu li {
+    margin:0;
+    padding:0;
+    margin-bottom:1px;
+}
+
+.rankMenu a {
+    display:block;
+    padding:2px 5px;
+    color:#FFFFFF;
+    background:#003FFF;
+    text-decoration:none;
+}
+
+.rankMenu a:hover {
+    background:#F0F0F0;
+    color:#FFA500;
+}
+
+.rankMenu ul li {
+    padding-left:15px;
+}
+
+.rankMenu ul a {
+    background:#BAFFFF;
+    color: #000000;
+}
+
+td.panel {
+    height:445px;
+    vertical-align:top;
+    padding: 0px 40px 0px 50px;
+}
+
+
+

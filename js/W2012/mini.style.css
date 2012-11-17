@@ -1,0 +1,37 @@
+.bgGrid{position:absolute;z-index:1;border-color:#383838;border-style:solid;border-width:2px;margin:0;padding:0}
+.sequence{position:absolute;z-index:100;border-style:solid;border-width:1px;margin:0;padding:0}
+.ancestor{position:absolute;z-index:6}
+.treeAncester{z-index:161}
+.ancestorSequence{position:absolute;z-index:4;opacity:0.5;margin:0;padding:0}
+.treeAncestorSequence{position:absolute;z-index:4;margin:0;padding:0}
+.redLine{position:absolute;z-index:3;background-color:red;opacity:0.8}
+.new{display:none}
+.blackoutseq{opacity:0.4}
+#fitch{position:absolute;top:0;left:0}
+#score{position:absolute;z-index:100;width:100px}
+.lbContent{z-index:151}
+.lightbox{z-index:150;position:absolute;top:0;left:0;background-color:#000;opacity:0.8;height:100%;width:100%}
+.startSplash{text-shadow:0 0 100px #FFF;-moz-text-shadow:0 0 100px #FFF;-webkit-text-shadow:0 0 100px #FFF;color:red}
+.circle{display:block;width:80px;height:80px;background:#FFF;z-index:200;-moz-border-radius:40px;-webkit-border-radius:40px}
+div#treeBG{position:absolute;z-index:160;background-color:#000;opacity:0.8}
+div#tree{position:absolute;z-index:160}
+div.treeChild{position:absolute;z-index:161;background-color:#FFF;width:.8em;height:.8em;-webkit-border-radius:.4em;-moz-border-radius:.4em}
+div.onTreeChild{position:absolute;z-index:161;background-color:red;width:1em;height:1em;-webkit-border-radius:.5em;-moz-border-radius:.5em}
+div.onTreeNode{position:absolute;z-index:161;background-color:red}
+.line{position:absolute;height:0;border-color:#FFF;border-style:solid;border-width:2px 0 0}
+div#clockbg{position:absolute;top:0;left:0;width:3em;height:3em;z-index:160}
+div#clockbgTopLeft{position:relative;top:0;left:0;z-index:159;height:1.5em;width:1.5em;-moz-border-radius-topleft:2.5em 2.5em 0 0;border-top-left-radius:2.5em 2.5em;background-color:#0FF}
+div#clockbgTopRight{position:relative;top:-1.5em;left:1.5em;z-index:159;height:1.5em;width:1.5em;-moz-border-radius-topright:2.5em 2.5em 0 0;border-top-right-radius:2.5em 2.5em;background-color:green}
+div#clockbgBottomLeft{position:relative;top:-1.5em;left:0;z-index:159;height:1.5em;width:1.5em;-moz-border-radius-bottomleft:2.5em 2.5em 0 0;border-bottom-left-radius:2.5em 2.5em;background-color:#9932CC}
+div#clockbgBottomRight{position:relative;top:-3em;left:1.5em;z-index:159;height:1.5em;width:1.5em;-moz-border-radius-bottomright:2.5em 2.5em 0 0;border-bottom-right-radius:2.5em 2.5em;background-color:orange}
+div#rotate{position:relative;top:.6em;left:.6em;z-index:161;height:2em;width:2em}
+div#pie{position:relative;z-index:161;background-color:#FFF;height:1em;width:1em;-moz-border-radius-topleft:2.5em 2.5em 0 0;border-top-right-radius:0 0;border-top-left-radius:2.5em 2.5em;border-bottom-right-radius:0 0}
+div#pieCenter{position:relative;z-index:162;-moz-border-radius:.4em;-webkit-border-radius:.4em;background-color:#FFF;top:-.4em;left:.7em;height:.8em;width:.8em}
+.compactTreeNode{position:absolute;z-index:161;background-color:#FFF;width:1em;height:1em;-webkit-border-radius:.5em;-moz-border-radius:.5em}
+.par{font-size:80%;float:left;position:relative}
+#game-star{position:relative;z-index:161}
+#game-star-layer{position:relative;z-index:162}
+.game-star-shadow{-webkit-box-shadow:0 0 5px #FFF;-moz-box-shadow:0 0 5px #FFF;box-shadow:0 0 5px #FFF}
+#endGameMenu{position:absolute;top:0;left:0;width:100%;height:100%;background-color:#000;opacity:0.8}
+label#treeButton,div#compactTree{position:absolute}
+div#clock,#game-clock{position:absolute;z-index:160;height:3em;width:3em}

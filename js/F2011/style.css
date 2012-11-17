@@ -1,0 +1,322 @@
+/* 
+
+About: Phylo Script css
+*/
+.bgGrid {
+	position: absolute;
+	z-index : 1;
+	border-width: 2px;
+	border-style : solid;
+	border-color : #383838;
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	background: url(http://phylo.cs.mcgill.ca/beta/static/dark_paper.png) -10px 0 no-repeat;
+}
+
+.sequence {
+	position: absolute;
+	z-index:100;
+	margin : 0px 0px 0px 0px;		
+	padding: 0px 0px 0px 0px;
+	border-width: 1px;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+.ancestor {
+	position: absolute;
+	z-index:6;
+}
+.treeAncester {
+	z-index:161;
+}
+
+.ancestorSequence {
+	position : absolute;
+	z-index: 4;
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+	opacity : 0.5;
+}
+
+.treeAncestorSequence {
+	position : absolute;
+	z-index: 4;
+	margin : 0px 0px 0px 0px;
+	padding : 0px 0px 0px 0px;
+}
+.redLine {
+	position : absolute;
+	z-index : 3;
+	background-color: red;	
+	opacity: 0.8;
+}
+
+.new {
+	display : none;
+}
+
+.blackoutseq {
+	opacity : 0.4;
+}
+
+.blackout {
+	
+}
+
+#fitch {
+	position: absolute;
+	top : 0;
+	left: 0;
+}
+#score {
+	position: absolute;
+	z-index: 100;
+	width: 100px;
+}
+
+.lbContent {	
+	z-index: 151;
+}
+.lightbox {
+	z-index: 150;
+	position: absolute;
+	top : 0px;
+	left: 0px;
+	background-color: black;
+	opacity : 0.8; 
+	height: 100%;
+	width : 100%;
+}
+.startSplash {
+	text-shadow: 0 0 100px #FFFFFF;
+	-moz-text-shadow: 0 0 100px #FFFFFF;
+	-webkit-text-shadow: 0 0 100px #FFFFFF;
+	color: red;
+}
+.circle {
+	display : block;
+	width: 80px;
+	height: 80px;
+	background: #FFFFFF;
+	z-index: 200;
+	-moz-border-radius: 40px;
+	-webkit-border-radius : 40px;
+}
+label#treeButton {
+	position : absolute;
+}
+div#treeBG {
+	position : absolute;
+	z-index: 160;
+	background-color: black;
+	opacity: 0.8;
+}
+div#tree {
+	position : absolute;
+	z-index: 160;
+}
+div.treeChild {
+	position : absolute;
+	z-index: 161;
+	background-color: white;
+	width: 0.8em;
+	height: 0.8em;
+	-webkit-border-radius: 0.4em; 
+	-moz-border-radius: 0.4em;
+}
+div.onTreeChild {
+	position: absolute;
+	z-index: 161;
+	background-color: red;
+	width: 1.0em;
+	height: 1.0em;
+	-webkit-border-radius: 0.5em; 
+	-moz-border-radius: 0.5em;
+}
+div.onTreeNode {
+	position: absolute;
+	z-Index: 161;
+	background-color: red;
+}
+
+.angle {
+	position: absolute;
+}	
+
+.line {
+	position: absolute;
+	height: 0px;
+	border-width: 2px 0px 0px 0px;
+	border-style: solid;
+	border-color:white;
+}
+div#clockbg {
+	position : absolute;
+	top:0px;
+	left:0px;
+	width: 3.0em;
+	height: 3.0em;
+	z-index: 160;
+}
+div#clockbgTopLeft {
+	position : relative;
+	top: 0px;
+	left:0px;
+	z-index: 159;
+	height: 1.5em;
+	width: 1.5em;
+	-moz-border-radius-topleft: 2.5em 2.5em 0 0;
+	border-top-left-radius: 2.5em 2.5em;
+	background-color: cyan;
+}
+div#clockbgTopRight {
+	position: relative;
+	top:-1.5em;
+	left: 1.5em;
+	z-index: 159;
+	height:1.5em;
+	width: 1.5em;
+	-moz-border-radius-topright: 2.5em 2.5em 0 0;
+	border-top-right-radius: 2.5em 2.5em;
+	background-color: green;
+}
+div#clockbgBottomLeft {
+	position: relative;
+	top:-1.5em;
+	left:0px;
+	z-index: 159;
+	height: 1.5em;
+	width: 1.5em;
+	-moz-border-radius-bottomleft: 2.5em 2.5em 0 0;
+	border-bottom-left-radius:2.5em 2.5em;
+	background-color: darkOrchid;
+}
+div#clockbgBottomRight {
+	position: relative;
+	top: -3.0em;
+	left: 1.5em;
+	z-index: 159;
+	height: 1.5em;
+	width: 1.5em;
+	-moz-border-radius-bottomright: 2.5em 2.5em 0 0;
+	border-bottom-right-radius: 2.5em 2.5em;
+	background-color: orange;
+}
+div#clock {
+	position : absolute;
+	z-index: 160;
+	height: 3.0em;
+	width: 3.0em;
+}
+div#rotate {
+	position:relative;
+	top:0.6em;
+	left:0.6em;
+	z-index: 161;
+	height: 2.0em;
+	width : 2.0em; 
+}
+div#pie {
+	position:relative;
+	z-index: 161;
+	background-color:white;
+	height : 1.0em;
+	width : 1.0em;
+	-moz-border-radius-topleft: 2.5em 2.5em 0 0;
+	border-top-right-radius: 0 0;
+	border-top-left-radius : 2.5em 2.5em;
+	border-bottom-right-radius : 0 0;
+	border-bottom-left-radius ; 0 0;
+}
+div#pieCenter {
+	position: relative;
+	z-index: 162;
+	-moz-border-radius: 0.4em;
+	-webkit-border-radius: 0.4em;
+	background-color:white;
+	top: -0.4em;
+	left: 0.7em;
+	height: 0.8em;
+	width: 0.8em;
+}
+div#compactTree {
+	position: absolute;
+}
+.compactTreeNodeScore {
+	/*for positioning*/
+	position: absolute;
+	color: white;
+}
+.compactTreeNodeFake {
+	/*for positioning*/
+	position: absolute;
+	display:none;
+}
+.compactTreeNode {
+	position : absolute;
+	z-index: 161;
+	background-color: white;
+/*	width: 1.0em;
+	height: 1.0em;
+	-webkit-border-radius: 0.5em; 
+	-moz-border-radius: 0.5em; */
+}
+.par {
+	font-size: 80%;
+	float: left;
+	position : relative;
+}
+#game-clock {
+	position : absolute;
+	z-index: 160;
+	height: 3.0em;
+	width: 3.0em;
+}
+#game-star {
+	position: relative;
+	z-index: 161;
+}
+#game-star-layer {
+	position: relative;
+	z-index: 162;
+}
+
+.game-star {
+	position: relative;
+	height:100%;
+	width: 100%;	
+}
+
+.game-cycle {
+	position: relative;
+	height:100%;
+	width: 100%;	
+}
+
+.game-star-shadow {
+	-webkit-box-shadow: 0px 0px 5px #FFFFFF;
+	-moz-box-shadow: 0px 0px 5px #FFFFFF;
+	box-shadow: 0px 0px 5px #FFFFFF;
+}
+#endGameMenu {
+	position: absolute;
+	top : 0px
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color : "black";
+	opacity: 0.8;
+}
+.mouseCircle {
+	position: absolute;
+	background-color : transparent;
+	border-style: solid;
+	border-color: #FFFFFF;
+	z-index: 300;
+}
+.onSelectCaptured {
+	border-style: solid;
+	border-color: "red";
+	border-width: 0.2em;
+}

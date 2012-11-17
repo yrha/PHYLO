@@ -1,0 +1,174 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="utf8" lang="utf8">
+	<head>
+		<title>Phylo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+		<link href="fixedMenu_style2.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" /> 
+		<link rel='stylesheet' href='new.css'/>
+		<link rel='stylesheet' href='login.css'/>
+		<link rel='stylesheet' href='FBLogin.css'/>
+		<script src="http://code.jquery.com/jquery-1.7.min.js" type="text/javascript"></script>
+		<script src='mini.ak.script.js' type="text/javascript"></script>
+		<script src='new.js' type='text/javascript'></script>
+		<script type='text/javascript' src='jquery.fixedMenu.js'></script>
+		<script type='text/javascript' src='langManager.js'></script>
+		<script src="helper.js" type="text/javascript"></script>
+		<script type='text/javascript' src='diseaseList.js'></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+		<script type='text/javascript' src='mini.pluginController.js'></script>
+		<script type='text/javascript' src='login.js'></script>
+		<script type='text/javascript' src='FBLogin.js'></script>
+		<link href='override.css' rel='stylesheet'/>
+		  <link href="data.css" media="screen" rel="Stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id='notify'>
+			<div id='notify-bg'>
+			</div>
+			<div id='notify-wrapper'>
+				<div id='notify-body'>
+					<div id='notify-b'></div>
+					<div>
+						<a href='#ok'><div>OK</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='wrapper'>
+			<div class='menu-body'>
+		<!--		<div id='settings'>
+					<a href='#' id='settings_button'><div>Settings</div></a>
+					<div id='settings_box'>
+									
+					</div>
+				</div> -->
+				<div id='menu' class='menu'>
+				</div>
+				<div id='login'>
+					<a href='#' id='login_button'><div>Login</div></a>	
+					<div id='login_box'>
+						<div id='email-box'>
+							<span></span>
+							<br>
+							<input type='text' name='email'/>
+						</div>
+						<div id='username'>
+							<span></span>
+							<br>
+							<input type='text' name='user'/>
+						</div>
+						<div id='password'>
+							<span></span>
+							<br>
+							<input type='password' name='pass'/>
+						</div>		
+						<div id='loginButtons'>
+							<a id='login-button' href=''><div></div></a>
+							<a id='login-register' href=''></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27559307-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end of analytics -->
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <!--<div id="content_wrap" class="center">
+    </div>
+    -->
+	<!--- edited by ak-->
+		<div id='sandbox'></div>
+		<div id='input_box'>
+			<input type='text'/>
+		</div>		
+	<div class='wrapper'>
+		<div class='info'></div>
+	<!-- end of edit -->
+
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p id='lang-more'> Phylo is a challenging flash game in which every puzzle completed contributes to mapping diseases within human DNA. Learn <a href="about.html">more</a>.</p>
+    </div>
+    <div id="section">
+      <p id='lang-community'> Join the phylo <a href="https://www.facebook.com/groups/127713783941517/">community</a> on facebook or give us a thumbs up: </p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+    <div id="section">
+        <a href="?pid=ranks" class="button" id='lang-ranking'>Rankings</a>
+    </div>
+    <div id="section">
+        <a href="?pid=results" class="button" id='lang-result'>Results</a>
+    </div>
+    </footer>
+	</div>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="raph-menu.js"></script>
+    <script type="text/javascript">
+  var uvOptions = {};
+  (function() {
+    var uv = document.createElement('script'); uv.type = 'text/javascript'; uv.async = true;
+    uv.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'widget.uservoice.com/MCIc8HiwAFIT7fLlBEvl7Q.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(uv, s);
+  })();
+    </script>
+		<script type='text/javascript' src='pageManager.js'></script>
+  <!-- <script type='text/javascript' src='../oops.js'></script> -->
+</html>

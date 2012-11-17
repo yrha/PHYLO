@@ -1,0 +1,78 @@
+h1 {
+  /*  background: #029848;
+	
+    left: -4.5em;*/
+    color: #FFFFFF;
+	position:relative;
+}
+
+.rankMenu, .rankMenu ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.rankMenu {
+    width:250px;
+}
+
+.rankMenu li {
+    margin:0;
+    padding:0;
+    margin-bottom:1px;
+}
+
+.rankMenu a {
+    border-radius:4px;
+    display:block;
+    padding:2px 5px;
+    color:#FFFFFF;
+    background:#DAEDFA;
+    text-decoration:none;
+}
+
+.rankMenu a:hover {
+    background:#F0F0F0;
+    color:#FFA500;
+}
+
+.rankMenu ul li {
+    padding-left:15px;
+}
+
+.rankMenu ul a {
+    background:#D8FAE7;
+    color: #000000;
+}
+
+div.rankings {
+    height: 445px;
+    min-width: 688px;
+    max-width: 1178px;
+}
+
+div.panel {
+    float:left;
+    width: 250px;
+}
+
+div.rankingframe {
+    margin-left:10px;
+    width:62%;
+    height:100%;
+    min-width:88px;
+    max-width:978px;
+    float:left;
+}
+
+.hidden {
+    display:none;
+}
+
+#rankingframe {
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    border:0px;
+}
+

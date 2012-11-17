@@ -1,0 +1,172 @@
+body {
+	font-family: 'helveticathin', Helvetica, Arial, sans-serif;  
+	margin:0;
+	padding:0;	
+	text-align:center;
+	background:url(http://phylo.cs.mcgill.ca/beta/static/light_paper.png);
+}
+.wrapper {
+	position:relative;
+	text-align:left;
+	height:768px;
+	max-height:768px;
+	width:768px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+
+.row {
+	position:relative;
+	margin-bottom:10px;
+}
+.row div {
+	position:relative;
+	display:inline-block;
+	float:left;
+	margin:1px;
+}
+span.logo img {
+	position:relative;
+	width: 450px;
+	left:-30px;
+}
+span.logo-img img {
+	position:relative;
+	width: 310px;
+	left: -30px;
+	top:-10px;
+}
+div img {
+	max-height: 256px;
+}
+div.random {
+	color:white;
+	background-color:#009ACD;
+	height: 150px;
+	width:400px;
+	word-wrap:break-word;
+	font-size:40px;
+	padding:10px;
+}
+div.random-level div{
+	background-color:#8B4789;
+	color: white;
+	margin-top:0px !important;
+	width: 112px;
+	height:84px;
+	font-size:83px;
+}
+div.random-level div span {
+	position:relative;
+	left:5px;
+	bottom:5px;
+}
+div#language {
+	color:white;
+	background-color:#FF8C00;
+	height:79px;
+	width:177px;
+	font-size: 49px;
+}
+div#tutorial  {
+	color:white;
+	background-color:#009ACD;
+	font-size:49px;
+	height:90px;
+	width:200px;
+}
+div#tutorial span {
+	position:relative;
+	left: 5px;
+}
+div#about span {
+	position:relative;
+	left:5px;
+}
+div#about {
+	color:white;
+	background-color:#008B00;
+	width:217px;
+	height:90px;
+	font-size:49px;
+}
+div.level {
+	position:relative;
+	background-color:#EF4136;
+	height:79px;
+	width:240px;
+	color:white;
+	font-size:49px;
+}
+div input {
+	border: 1px solid #EF4136;
+	height: 148px;
+	font-size:40px;
+	color:#EF4136;
+	font-family: 'helveticathin', Helvetica, Arial, sans-serif;  
+	width:300px;
+	border-radius:0;
+	-moz-border-radius:0;
+	-khtml-border-radius:0;
+	-o-border-radius:0;
+	-ms-border-radius:0;
+	-webkit-border-radius:0;
+}
+
+div.disease {
+	background-color:#008B00;
+	color: white;
+	height: 150px;
+	font-size: 30px;
+	width: 322px;
+	padding:10px;
+}
+div.disease-level {
+	width: 381px;
+	height: 170px;
+}
+
+div.disease-level img {
+	width: 70px;
+	height: 70px;
+	padding: 3px;
+	position:relative;
+	display:inline-block;
+}
+img.img-shift {
+	left:50px;
+}
+
+#frame {
+	width:1024px;
+	height:450px;
+	display:none;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	border:none;
+	position:relative;
+}
+@font-face {
+    font-family: 'helveticathin';
+    src: url('../font_files/helveticaneueltstd-th-helv.eot');
+    src: url('../font_files/helveticaneueltstd-th-helv.eot?#iefix') format('embedded-opentype'),
+         url('../font_files/helveticaneueltstd-th-helv.woff') format('woff'),
+         url('../font_files/helveticaneueltstd-th-helv.ttf') format('truetype'),
+         url('../font_files/helveticaneueltstd-th-helv.svg#HelveticaNeueLTStd35Thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.back {
+	display:inline-block;
+	padding: 5px 10px;
+	background: #009ACD;
+	color: white;
+	font-size:70px;
+}
+.wrapper2 {
+	text-align:left;
+	margin-left:auto;
+	margin-right:auto;
+	width:764px;
+}

@@ -1,0 +1,639 @@
+##maf version=1 program=phylo
+
+a blockid=69292 variant=block69292.2679.48.9375.6.18 score=2029.90
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA------GAGGAC--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG------GAGGAT--G--AG----CAGAG------GA--AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA------GAGGAT--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA------GAGGAT--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA------GAGGAT--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA------GAGGAT--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA------GAGGAT--G--AG----CGGAG------GA--AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA------CAGGGC--G--AA----CGGAA------GA--AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC------GGGATG--A--AA----TGGAA------GA--AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT------GGG--CA-----AGAGGAAGTG--GGGGGTAGGGG------GA--GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAA--G--A-----AAGAG------CA--AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTG------------------------GGAG-----GGGCGGC--G--AGGGGCCGGGG------AGTTAGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAA--G--A-----CAGAG------GA--AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC------------------------AGGGGCCC-----AGAGGAA--GGCGGGGGACAGAT------GA--TG-GCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAG--G--AGGCTAGGGAACGCGGTGA--AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAG--G--GAGGTGGGGAG------GA--GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TG--G--GACGGGGAACG------GG--AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCGCCGGC----CTCCGCCTCC--GCGGGCA----------TG--G--GGCGGGGAGCG------TC--AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2678.46.9377.6.18 score=2004.70
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA---GA------GGACGA--------GCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG---GA------GGATGA--------GCAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA---GA------GGATGA--------GCGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA---GA------GGATGA--------GCGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA---GA------GGATGA--------GCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA---GA------GGATGA--------GCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA---GA------GGATGA--------GCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA---CA------GGGCGA--------ACGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC---GG------GATGAA--------ATGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAG-------TGGGCAA---GAGGAAGTGGGGGG--------TAGGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA---GG------AAGAAG--------AAAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-----------------A-GGGGCGG--CGA------GGGGCC--------GGGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC---CG------AAGAAG--------ACAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC-----------------------A-GGGGCCC---AG------AGGAAG--------GCGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTC-CA------AGGAAGAGGAGGCTAGGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC---GA------A---ACAGGGAGGTGGGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA-----------------TGGGACGGGGAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCTCC--GCGGGCA-----------------TGGGGCGGGGAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2680.55.9373.6.18 score=2054.30
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA----GAGGACGAGC-------GGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG----GAGGATGAGC-------AGAG------GA---AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA----GAGGATGAGC-------GGAG------GA---AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA----GAGGATGAGC-------GGAG------GA---AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA----GAGGATGAGC-------GGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA----GAGGATGAGC-------GGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA----GAGGATGAGC-------GGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA----CAGGGCGAAC-------GGAA------GA---AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC----GGGATGAAAT-------GGAA------GA---AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAG-------TGGGCAA----GAGGAAGTGGGGGGTA-GGGG------GA---GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA------GGAAGAAGAA-----AGAG------CA---AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTG-------------------------------GGAGGGGCGGCGAGGGGCCGGG------GAGTTAGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-C--GAAGAAGA--------CAGAG------GA---AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC------------------------AGGGGC---CCAGAGGAAG-GCGGGGGACAGAT------GA---TG-GCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCA-AGGAAGAGGAGGCTAGGGAACGCGGTGA---AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC------GAAACAGGGAGGTGGGGAG------GA---GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA-----------TGGGACGGGGAACG------GG---AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCGCCGGC----CTCCGCCTCC--GCGGGCA-----------TGGGGCGGGGAGCG------TC---AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2680.59.9371.6.18 score=2000.20
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGACGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----GAGGATGA--G----C-----AGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA--G----C-----GGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----CAGGGCGA--A----C-----GGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----GGGATGAA--A----T-----GGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGG--GGGGTA-----GGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG--A----A-----AGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-------------------AGGGGCG-----GCGAGGGGCCG----G-----GGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG--A----C-----AGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC---------------------A---GGGGCCC-----AGAGGAAG--G----C-----GGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGG--A----GGCTAGGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGG--G----AGGTGGGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGG--G----ACGGGGAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCT-C-CGCGGGCA----------TGG--G----GCGGGGAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2678.43.9378.6.18 score=2002.20
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGACGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----GAGGATGA-------G----CAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----CAGGGCGA-------A----CGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----GGGATGAA-------A----TGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGG-------GGGGTAGGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG-------A----AAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-------------------AGGGGCG-----GCGAGGGG-----CCG----GGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG-------A----CAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC---------------------A---GGGGCCC-----AGAGGAAG-------G----CGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCT--A----GGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGT--G----GGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGG--G----GAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCT-C-CGCGGGCA----------TGGGGCGG--G----GAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2677.41.9382.6.18 score=2010.80
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----G-------A-----GGACG-AGCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----G-------A-----GGATG-AGCAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----G-------A-----GGATG-AGCGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----G-------A-----GGATG-AGCGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----G-------A-----GGATG-AGCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----G-------A-----GGATG-AGCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----G-------A-----GGATG-AGCGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----C-------A-----GGGCG-AACGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----G-------G-----GATGA-AATGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAG-------TGGGCAA-----GAGGAAGTG-----GGGGG-TAGGGGG------AG------AGAGGCT-GGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----G-------G-----AAGAA-GAAAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-----------------A-GGGGCGG-----C-------G-----AGGGGCCGGGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----C-------G-----AAGAA-GACAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC-----------------------A-GGGGCCC-----A-------G-----AGGAA-GGCGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAG-------GAAGAGGAGGC-TAGGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----G-------AAACAGGGAGG-TGGGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA-----T-------G-----GGACG-GGGAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCTCC--GCGGGCA-----T-------G-----GGGCG-GGGAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2676.45.9386.6.18 score=2024.00
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA----------GAGGACGAGCGGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG----------GAGGATGAGCAGAG------GA---AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA----------GAGGATGAGCGGAG------GA---AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA----------GAGGATGAGCGGAG------GA---AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA----------GAGGATGAGCGGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA----------GAGGATGAGCGGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA----------GAGGATGAGCGGAG------GA---AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA----------CAGGGCGAACGGAA------GA---AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC----------GGGATGAAATGGAA------GA---AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAA-GTGGGGGGTAGGGG------GA---GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG-----AAAGAG------CA---AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTG-------------------------GGA-----GGGGCGGCGAGGGGCCGGG------GAGTTAGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG-----ACAGAG------GA---AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGCAGGGGCCC---------------------AGA-----GGAA-GGCGGGGGACAGAT------GA---TG-GCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCTAGGGAACGCGGTGA---AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGTGGGGAG------GA---GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGGGGAACG------GG---AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCTCC--GCGGGCA----------TGGGGCGGGGAGCG------TC---AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2677.40.9383.6.18 score=1972.70
+s hg19.chr6                           144471364  78      + 171115067  GCT-C----------CCTGCCCTG-------------------------GGGACCA-----G-AGGACGA----GCGGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC----------------TCCCTG--CC-----C----T----------AGGAACC-----GGAGGATGA----GCAGAG------GAAGT----GCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C----------CCTGACCTG-------------------------GGGACCA-----G-AGGATGA----GCGGAG------GAAGT----GTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C----------CCTGACCTG-------------------------GGGACCA-----G-AGGATGA----GCGGAG------GAAGT----GTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C----------CCTGCCCTG-------------------------GGGACCA-----G-AGGATGA----GCGGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C----------CCTGCCCTG-------------------------GGGACCA-----G-AGGATGA----GCGGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C----------CCTGCCCTG-------------------------GGGACCA-----G-AGGATGA----GCGGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --------------------------TCCGGCTC----C----------GGGGACC-----ACAGGGCGA----ACGGAA------GAAGT----GCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --------------------------GCTTCCTCGCCTC----------GGGGACG-----CGGGATGAA----ATGGAA------GAAGT----GTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C----------TCC------------TTGC----TCAGT--G---GGCAAGA-----GGAAGTGGGGGGTAGGGGG------AGAGA----GGCT-GGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T----------CCCGCCCCG--CCCATCTC----TCCATCCC---AGAGCAA-----GGAAGAAG-----AAAGAG------CAAG-----TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C----------CACGCCCTG-------------------------GGAGGGG-----CGGCGAGGG-GCCGGGGAG------TTAGT----ACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T----------CCCGCTCCG--CCCATCTC----TCCATCCC---AGAGCAC-----CGAAGAAG-----ACAGAG------GAAGT----TTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T----------CCCGCAGGG-GCCC-----------------------------------AGAGGAAGGCGGGGGA------CAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C----------TTTGAGCCACCCCCGCCAC----TCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCTAGGGAACGCGGTGAAGT----GCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C----------TCCGGGTGA-------------------------GGGGCGC-----GAAACAGGGAGGTGGGGAG------GAGGT----T--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC----------TCGGCCCCC-------------------------GCCAGCA----------TGGGACGGGGAACG------GGAGC----GCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCGCCGGCCTCC-GCC--TC-C---------------GCGGGCA----------TGGGGCGGGGAGCG------TCAGC----GCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2674.55.9388.6.18 score=2002.20
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGACGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----GAGGATGA-------G----CAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----CAGGGCGA-------A----CGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----GGGATGAA-------A----TGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGG-------GGGGTAGGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG-------A----AAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-------------------AGGGGCG-----GCGAGGGG-----CCG----GGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG-------A----CAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC---------------------A---GGGGCCC-----AGAGGAAG-------G----CGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCT--A----GGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGT--G----GGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGG--G----GAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCT-C-CGCGGGCA----------TGGGGCGG--G----GAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2678.41.9379.6.18 score=2005.30
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA--GAGGACGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG--GAGGATGA---------GCAGAG------GA------AGTG------CCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA--GAGGATGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA--GAGGATGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA--GAGGATGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA--GAGGATGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA--GAGGATGA---------GCGGAG------GA------AGTG------TCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA--CAGGGCGA---------ACGGAA------GA------AGTG------CCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC--GGGATGAA---------ATGGAA------GA------AGTG------TCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAG-------TGGGCAA--GAGGAAGT---------GGGGGG------TA------GGGGGAGAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA--GGAAGAAG---------AAAGAG------CA------AG-T------TCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-----------------A-GGGGCGG--CGAGGGGC--------CGGGGAG------TT------AGTA------CCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC--CGAAGAAG---------ACAGAG------GA------AGTT------TCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC-----------------------A-GGGGCCC--AGAGGAAG---------GCGGGG------GACAGATGATGG------CTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCT-AGGGAACGCGGTGA------AGTG------CCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC--GAA--ACAGGGAGGT--GGGGAG------GA------GGTT--------------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA---------TGGGACGG--GGAACG------GG------AGCG------CGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCTCC--GCGGGCA---------TGGGGCGG--GGAGCG------TC------AGCG------CCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2677.42.9380.6.18 score=2002.20
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGACGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----GAGGATGA-------G----CAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----CAGGGCGA-------A----CGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----GGGATGAA-------A----TGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGG-------GGGGTAGGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG-------A----AAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-------------------AGGGGCG-----GCGAGGGG-----CCG----GGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG-------A----CAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC---------------------A---GGGGCCC-----AGAGGAAG-------G----CGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCT--A----GGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGT--G----GGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGG--G----GAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCT-C-CGCGGGCA----------TGGGGCGG--G----GAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2680.57.9372.6.18 score=2029.90
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-------GAGGACGAGC---GGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-------GAGGATGAGC---AGAG------GAAGT----GCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-------GAGGATGAGC---GGAG------GAAGT----GTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-------GAGGATGAGC---GGAG------GAAGT----GTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-------GAGGATGAGC---GGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-------GAGGATGAGC---GGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-------GAGGATGAGC---GGAG------GAAGT----GTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-------CAGGGCGAAC---GGAA------GAAGT----GCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-------GGGATGAAAT---GGAA------GAAGT----GTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGGGGGGTAGGGGG------AGAGA----GGCT-GGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAGAA-----AGAG------CAAG-----TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTG---------------------GGAGGGG-----CGGCGAGGG-GCCGGGGAG------TTAGT----ACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAGAC-----AGAG------GAAGT----TTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGCAGGGGCCC--------------------------------AGAGGAAGGCGGGGGA------CAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCTAGGGAACGCGGTGAAGT----GCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGTGGGGAG------GAGGT----T--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGGGGAACG------GGAGC----GCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCTC--CGCGGGCA----------TGGGGCGGGGAGCG------TCAGC----GCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+
+a blockid=69292 variant=block69292.2676.41.9385.6.18 score=2002.20
+s hg19.chr6                           144471364  78      + 171115067  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGACGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+s calJac1.Contig1584                  10819      78      + 428702     GC-------TCCCTG--CC-----CT--A-------GGAACCG-----GAGGATGA-------G----CAGAG------GA------AGTGCCTCTGGCTGCAAACCTCCC--------ACTCCCCGCGAGGGT----CCG
+i calJac1.Contig1584                  C    0       C    0
+s papHam1.scaffold3250                13418      78      + 156558     ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i papHam1.scaffold3250                C    0       C    0
+s rheMac2.chr4                        48130899   78      - 167655696  ACT-C-CCTGACCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCTAACATCCC--------ACTCCCTGCGCCGGT----CCG
+i rheMac2.chr4                        C    0       C    0
+s ponAbe2.chr6                        147099016  78      + 174210431  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----GCG
+i ponAbe2.chr6                        C    0       C    0
+s gorGor1.Supercontig_0018322         2772       78      - 15141      GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i gorGor1.Supercontig_0018322         C    0       C    0
+s panTro2.chr6                        146676013  78      + 173908612  GCT-C-CCTGCCCTG---------------------GGGACCA-----GAGGATGA-------G----CGGAG------GA------AGTGTCTTGGGCGGCAAACATCCC--------ACTCCCCGCGCCGGT----CCG
+i panTro2.chr6                        C    0       C    0
+s micMur1.scaffold_1122               60866      79      + 296186     --T-C-C---------------GGCTCCG-------GGGACCA-----CAGGGCGA-------A----CGGAA------GA------AGTGCCTCGGGCGACAGGCACCCC--------TCGACGCCGGCCTGTGGGGGCG
+i micMur1.scaffold_1122               C    0       C    0
+s otoGar1.scaffold_85147.1-75780      3703       76      + 75780      --G-C-T--------T-CC--TCGCCTCG-------GGGACGC-----GGGATGAA-------A----TGGAA------GA------AGTGTCTGGGGCGGCAAGCACTCC------------CGCCCGCCC---TGGGCC
+i otoGar1.scaffold_85147.1-75780      C    0       C    0
+s tupBel1.scaffold_92881.1-14129      1002       84      + 14129      --C-C-TCC------------TTGCTCAGT--G---GGCAAGA-----GGAAGTGG-------GGGGTAGGGG------GA------GAGAGGCTGGGCGGCAAACACCCT--------TCTCCCTTGGCGGGT----TCG
+i tupBel1.scaffold_92881.1-14129      I    15      C    0
+s mm9.chr10                           117308933  79      - 129993255  --A-T-CCCGCCCCG--CCCATCTCTCCATCCC---AGAGCAA-----GGAAGAAG-------A----AAGAG------CA------AG-TTCCCGGGTGGTCCACACCGT--------C------------GC----CCG
+i mm9.chr10                           C    0       C    0
+s dipOrd1.scaffold_36959              2377       88      + 12264      --C-C-CACGCCCTGGG-------------------AGGGGCG-----GCGAGGGG-----CCG----GGGAG------TT------AGTACCTGGTCCGCAGCACTCCGTGGTCGGCGCCCCCTTCCCCGAGC----CCG
+i dipOrd1.scaffold_36959              C    0       C    0
+s rn4.chr1                            260201541  80      - 267910886  --A-T-CCCGCTCCG--CCCATCTCTCCATCCC---AGAGCAC-----CGAAGAAG-------A----CAGAG------GA------AGTTTCCCGGGTGGTCCACACGGT--------C------------GC----CCG
+i rn4.chr1                            C    0       C    0
+s oryCun2.chr12                       134867445  67      + 155355395  --T-T-CCCGC---------------------A---GGGGCCC-----AGAGGAAG-------G----CGGGG------GACAGATGATGGCTTCGGGTGG--------------------CCAATTACCCCGA----CCT
+i oryCun2.chr12                       C    0       C    0
+s bosTau4.chr9                        84355148   104     + 108145351  ----C-TTTGAGCCACCCCCGCCACTCGGCTTCCAGGGGGCCCTCCAAGGAAGAGGAGGCT--A----GGGAACGCGGTGA------AGTGCCCCAGGCGGCACACTTCGC--------AGCTGATCCT------------
+i bosTau4.chr9                        C    0       C    0
+s pteVam1.scaffold_3072               11712      42      + 151078     ----C-TCCGGGTGA---------------------GGGGCGC-----GAAACAGGGAGGT--G----GGGAG------GA------GGTT--------------------------------------------------
+i pteVam1.scaffold_3072               C    0       C    0
+s loxAfr3.scaffold_0                  115070050  64      - 129759341  ---CC-TCGGCCCCC---------------------GCCAGCA----------TGGGACGG--G----GAACG------GG------AGCGCGAAGG-----------TCT--------CCCACGCACACCCCG----GC-
+i loxAfr3.scaffold_0                  C    0       C    0
+s proCap1.scaffold_43036              4043       79      + 15374      ----CCTCAGCCTCG---CCGGC-CTCCGCCT-C-CGCGGGCA----------TGGGGCGG--G----GAGCG------TC------AGCGCCAAGG-----------CCT--------GCCCCTCACGCCGGG----AC-
+i proCap1.scaffold_43036              C    0       C    0
+s taeGut1.chr3                        63029474   30186   - 112617285  I
+s anoCar1.scaffold_0                  1909154    34284   - 16654889   I
+s monDom5.chr2                        422385218  21527   + 541556283  I
+s cavPor3.scaffold_68                 6197607    712     - 9373556    I
+s sorAra1.scaffold_253506             7420       10127   + 85189      I
+s myoLuc1.scaffold_141069             12179      881     + 26654      I
+s vicPac1.scaffold_45                 724231     246     + 1890684    I
+s canFam2.chr1                        38650895   1610    + 125616256  I
+s speTri1.scaffold_117393             72279      1901    + 146673     I
+s dasNov2.scaffold_77527              1142       2131    + 10553      I
+s tarSyr1.scaffold_60280              1495       1254    + 11899      M
+s equCab2.chr31                       3180202    684     - 24984650   I
+

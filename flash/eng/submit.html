@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Submit your alignment to Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+  </head>
+  <body>
+  <!-- fb stuff -->
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+  </script>
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- header -->
+  <!--  <div id="canvas" class="center"></div> -->
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+    
+    <div id="content">
+        <h1>Submit your alignment to Phylo</h1>
+        <p>
+	  <a href="http://phylo.cs.mcgill.ca">Phylo</a> is freely available to academic users who are willing to use our citizen science framework
+	  to improve their multiple sequence alignment data. You will only need to prepare your data in an appropriate format and send them to us
+	  at <a href="mailto:phylo-submit@cs.mcgill.ca?subject=[Phylo] Submit">phylo-submit@cs.mcgill.ca</a>. We will proceed your data and create
+	  puzzles out of it. Once the alignment will be ready the results will be send back to you. Of course, we will keep the integrity of your
+	  data private.
+	</p>
+
+	<p>
+	  The time necessary to proceed the data may vary. We will keep you updated of the processing time on this webpage. If you have particular
+	  time or quality requirements, we will do our best to accomodate your needs. Please, do not hesitate to communicate with us at
+	  <a href="mailto:phylo-submit@cs.mcgill.ca?subject=[Phylo] Request">phylo-submit@cs.mcgill.ca</a> if you have any request or question about
+	  the submission process.
+	</p>
+
+	<p>
+	  Step 1: Prepare your data using the <a href="http://genome.ucsc.edu/FAQ/FAQformat.html#format5">MAF format</a>. Your sequences must have
+	  been pre-aligned using your favorite <a href="http://en.wikipedia.org/wiki/List_of_sequence_alignment_software">sequence alignment software</a>.
+	  Please, do not forget to compress your files. If your data are too big to be sent by e-mail, please contact us at
+	  <a href="mailto:phylo-submit@cs.mcgill.ca?subject=[Phylo] Request">phylo-submit@cs.mcgill.ca</a> to arrange the transfer.
+	</p>
+
+	<p>
+	  Step 2: Please, verify that your data can be shared and made public. We reject any responsability in sharing, even partially, your sequences with
+	  Phylo users. Thank you for stating in the body of your email: &ldquo; The sender of this email have declared that the data embedded in this email
+	  can be shared with users of Phylo at <tt>http://phylo.cs.mcgill.ca</tt>, and that no competing interest exists.&rdquo;
+	</p>
+
+	<p>
+	  Indicate your name, institution and how you prefer to be reached. Please, tell us if some diseases are associated with your sequences. This will
+	  be useful to classify our data and motivate Phylo gamers!
+	</p>
+
+	<p>
+	  Step 4: Send us your files and other requested information at <a href="mailto:phylo-submit@cs.mcgill.ca?subject=[Phylo] Submit">phylo-submit@cs.mcgill.ca</a>
+	</p>
+	
+
+	<p>
+	  Step 5: We will proceed your data as fast as possible. Meanwhile, you can play the game yourself at
+	  <a href="http://phylo.cs.mcgill.ca">http://phylo.cs.mcgill.ca</a>!
+	</p>
+
+    </div>
+    </div>
+
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> Phylo is a challenging flash game in which every puzzle completed contributes to mapping diseases within human DNA. Learn <a href="about.html">more</a>.</p>
+    </div>
+    <div id="section">
+      <p> Join the phylo <a href="https://www.facebook.com/groups/127713783941517/">community</a> on facebook or give us a thumbs up: </p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+    </footer>
+  </body>
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<TITLE>Phylo</TITLE>
+</HEAD>	
+<BODY><TABLE ><tr><td>
+<FONT face="verdana" size=3 color="#F83823">Frequently Asked Questions</font>
+<Font face="verdana" size=2 color="#898989">
+<p><b><u>Pourquoi est-ce que l'&eacute;cran demeure vide lorsque je s&eacute;lectionne un niveau?</u></b>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Probablement parce-que notre serveur est surcharg&eacute;. Attendez un peu et r&eacute;essayez!
+<p><b><u>J'essaie de me contacter ou de m'enregistrer et je vois quelque chose qui tourbillone. Que se passe-t-il?</u></b>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Probablement parce-que notre serveur est surcharg&eacute;. Attendez un peu et r&eacute;essayez!
+<p><B><U>Je clique le bouton "Jouer" et tout je vois, c'est une rectangle blanc. Qu'est-ce qui se passe?</U></B>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Essayez de r&eacute;initialiser la cache de votre fureteur et appuyer "refresh". Si cela ne fonctionne pas, essayez la version anglaise ou envoyez-nous un courriel avec l'information suivante: fureteur, version de Flash. Merci pour votre aide et votre patience!
+<!--<p><B><U>Pourquoi ne d&eacute;veloppez-vous pas ce jeu pour iPhone/iPod/iPad/Android?</U></B>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Nous travaillons l&agrave;-dessus! -->
+<p><B><U>Je ne comprends pas la fa&ccedil;on de scorer un alignement. Commence ca fonctionne-t-il?</U></B>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;D'abord, il faut expliquer le concept de s&eacute;quence ancestrale. Consid&eacute;rons un alignement simple avec deux s&eacute;quences A et B. L'arbre phylog&eacute;n&eacute;tique consisterait alors de trois noeuds: A, B, et un pour leur ancestre hypoth&eacute;tique. On ne connait pas la s&eacute;quence ancestrale, mais on peut deviner de qoui elle a l'air: elle devrait &ecirc;tre reli&eacute;e &agrave; A et B! On peut inf&eacute;rer la s&eacute;quence ancestrale la plus <i>probable</i> en utilisant l'algorithme de <a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Fitch</a> (voir section 11.18.3) et c'est ce que Phylo fait. A chaque fois que l'alignement est &eacute;valu&eacute;, les s&eacute;quences ancestrales sont &eacute;valu&eacute;es pour tous les noeuds de l'arbre.
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Maintenant, parlons de la m&eacute;thode de score elle-m&ecirc;me. Nous utliisons ce qu'on appelle un mod&egrave;le de gap affine, qui cfonctionne comme suit. Pour chaque &ldquo;match&rdquo; (deux blocs de couleur identiques dans l'anc&ecirc;tre et un de ses descendants), vous obtenez +1 point, et pour chaque &ldquo;mismatch&rdquo; (deux blocs de couleur diff&eacute;rentes), vous obtenez -1 point.
+Les gaps (regions o&ugrave; il n'y a pas de blocs) sont &eacute;valu&eacute;s diff&eacute;remment. Un gap est &ldquo;ouvert&rdquo; &agrave; la premi&egrave;re position o&ugrave; une s&eacute;quence a un bloc et l'autre n'en a pas. Chaque position subs&eacute;quente o&ugrave; le gap se poursuit s'appelle une &ldquo;extension&rdquo; <b>notez que les colonnes o&ugrave; les deux s&eacute;quences ont un gap sont ignor&eacute;es</b>. L'ouverture d'un gap est co&ucirc;teuse: elle vaut -5 points. Par contre, l'extension d'un gap ne co&ucirc;te qu'un seul point.
+<P>&nbsp;&nbsp;&nbsp;&nbsp;On peut maintenant expliquer exactement comment on assigne le score &agrave; un alignement complet. En partant de la racine de l'arbre (l'anc&ecirc;tre hypoth&eacute;tique de toutes les esp&egrave;ces consid&eacute;r&eacute;es), nous comparons chaque s&eacute;quence ancestrale &agrave; son descendant gauche, en utilisant le mod&egrave;le de gap affine d&eacute;crit plus haut. Nous faisons ensuite la m&ecirc;me chose pour l'enfant de droite. Nous proc&eacute;dons ainsi pour chaque noeud ancestral de l'arbre, le comparant &agrave; ses deux descendants, jusqu'&agrave; ce que tous les noeuds ancestraux aient &eacute;t&eacute; trait&eacute;s.
+<P><B>&nbsp;&nbsp;&nbsp;&nbsp;Le score de l'alignement est alors la somme de tous les scores obtenus pour chaque anc&ecirc;tre</b>. Notez que de petits changements entre esp&egrave;ces reli&eacute;es de pr&egrave;s auront un grand impact sur le score total, puisque leur anc&ecirc;tre sera directement affect&eacute;, de m&ecirc;me que son propre anc&ecirc;tre, etc. Pour cette raison, vous devriez vous concentrer &agrave; aligner les esp&egrave;ces les plus reli&eacute;es aussi bien que possible.
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Retournons maintenant &agrave; notre example avec les esp&egrave;ces A et B, et supposons que l'alignement soit le suivant:
+<font size="3"><pre> 
+Species A: ACG--TT
+Species B: ACGTTTA
+</pre></font>&nbsp;&nbsp;&nbsp;&nbsp;Alors, l'arbre avec la s&eacute;quence ancestrale pourrait avoir l'air de ceci:
+<font size="3"><pre> 
+        ACG--TT
+       /
+ACGTTTT
+       \
+        ACGTTTA
+</pre></font>
+&nbsp;&nbsp;&nbsp;&nbsp;(<a href="http://www-ab.informatik.uni-tuebingen.de/teaching/ws06/albi1/script/phylogeny_31Jan2007.pdf">Voir l'algorithme de Fitch</a> - section 11.18.3). 
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;Maintenant, calculons le score de l'alignement. Nous commen&ccedil;ons par comparer la s&eacute;quence A &agrave; son anc&ecirc;tre. Nous trouvons 5 matches (colonnes 1,2,3,6, et 7), aucun mismatch, une ouverture de gap (colonne 4), et une extension de gap (colonne 5). Cela donne donc un total de:
+<font size="3"><pre>
+(5 * 1) + (0 * -1) + (1 * -5) + (1 * -1) = -1
+</pre></font> 
+&nbsp;&nbsp;&nbsp;&nbsp;Pour la comparaison de B avec son anc&ecirc;tre, nous avons 6 matches (colonnes 1-6), 1 mismatch (deni&egrave;re colonne), et aucun gap. Le score est donc de:
+<font size="3"><pre>
+(6 * 1) + (1 * -1) = 5
+</pre></font> 
+&nbsp;&nbsp;&nbsp;&nbsp;Le score <i>total</i> de l'alignement est donc:
+<font size="3"><pre>
+(comparaison avec A) + (comparison avec B)
+= -1 + 5 
+= 4
+</pre></font>
+<!--<B><U>Quand je bouge ma sourir sur les stats, elles sont toutes z&eacute;ro. Que se passe-t-il?</U></B>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;Pour voir les statistiques, cliquez sur un noeud de l'arbre.Cela vous donnera toutes les statistiques utiles sur l'alignement entre la s&eacute;quence ancestrale a cet endroit et ses deux descendants. Vous pouvez aussi s&eacute;lectionner plusieurs noeuds en dessinant un boite autour d'elles avec shift-clique.
+<p><B><U>Pourquoi Phylo n'&eacute;value-t-il pas mon score instantan&eacute;ment?</U></B>
+<P>&nbsp;&nbsp;&nbsp;Vous pouvez en tout temps &Eacute;valuer votre score en cliquand le bouton "&Eacute;valuer". Autrement, le score n'est pas &eacute;valu&eacute; en temps r&eacute;eal pour les raisons suivantes:
+<UL>
+<LI>&eacute;valuer un alignement est compliqu&eacute;. Plein de choses doivent &ecirc;tre calcul&eacute;es. &eacute;valuer un alignement entre 8 esp&egrave;ces en temps r&eacute;l demanderait trop de calcul pour de vieux ordinateurs.</LI><LI>Cela ajoute un &eacute;l&eacute;ment de strat&eacute;gie au jeu. Si le score &eacute;tait	calcul&eacute; en temps r&eacute;el, le joueur pourrait simplement bouger les blocs al&eacute;atoirement jusqu'&agrave; ce qu'il obtienne un bon score. Cela enl&egrave;verait tout plaisir au jeu!</LI>
+</UL>-->
+</font>
+</tr></td></table>
+	</BODY>
+</HTML>
+

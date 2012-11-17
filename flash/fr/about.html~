@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+  </head>
+  <body>
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+    
+    <div id="content">
+    <P>
+								<h1>Qu'est ce que Phylo ? </h1>
+								<P>
+								Bien que cela ne semble &ecirc;tre qu'un simple jeu, Phylo est en fait un jeu 
+								qui nous permet d'utiliser la puissance de calcul humaine pour r&eacute;soudre 
+								un probl&egrave;me courant ; l'alignement de s&eacute;quences multiple.
+								 
+									
+								<h1>Qu'est ce qu'un alignement de s&eacute;quences multiple? </h1>
+								<P>
+								
+								Un alignement de s&eacute;quence est une fa&ccedil;on d'arranger les s&eacute;quences d'ADN, 
+								ARN ou prot&eacute;ines afin d'identifier les r&eacute;gions similaires. Ces 
+								similarit&eacute;s peuvent &ecirc;tre la cons&eacute;quence de relations fonctionnelles, 
+								structurelles ou &eacute;volutives entre les s&eacute;quences.
+								<BR>&agrave; partir de tels 
+								alignements, les biologistes peuvent inf&eacute;rer des origines &eacute;volutives 
+								partag&eacute;es par les s&eacute;quences, identifier des sites fonctionnels 
+								importants, et d&eacute;crire les mutations caract&eacute;ristiques. Mais ce qui est 
+								encore plus important est que les biologistes peuvent s'en servir pour 
+								identifier l'origine de maladies g&eacute;n&eacute;tiques.
+								 
+									
+								<h1>Le probl&egrave;me </h1>
+								<P>
+			
+								Traditionnellement, les algorithmes d'alignement multiple utilisent des heuristiques calculatoire sophistiqu&eacute;es pour aligner les s&eacute;quences. 
+								<BR>Malheureusement, l'utilisation de ces heuristiques ne permet pas 
+								garantir de trouver une solution optimale, tandis que l'utilisation 
+								d'algorithmes exact permettant de trouver la solution optimale est quant 
+								&agrave; elle impossible en raison de son coÃ»t calculatoire (i.e. l'execution 
+								de l'algorithme prendrai trop de temps). Cela provient de la taille des 
+								g&eacute;nomes qui contiennent environ trois milliards de bases, et de 
+								l'augmentation de complexit&eacute; calculatoire chaque fois qu'une nouvelle 
+								s&eacute;quence est ajout&eacute;e &agrave; un alignement. 
+
+
+								 
+									
+								<h1>Notre approche </h1>
+								<P>
+			
+								Au cours de l'&eacute;volution les humains ont acquis la capacit&eacute; de 
+								reconnaÃ®tre les formes g&eacute;om&eacute;triques et &agrave; r&eacute;soudre de mani&egrave;re efficace et 
+								rapide les probl&egrave;mes visuels.
+								<BR>En abstrayant les alignements de s&eacute;quences multiples &agrave; une manipulation 
+								de formes g&eacute;om&eacute;triques color&eacute;es, nous avons adapt&eacute; le probl&egrave;me aux 
+								capacit&eacute;s de raisonnement des humains.
+								<BR>En r&eacute;cup&eacute;rant les donn&eacute;es qui ont d&eacute;j&agrave; &eacute;t&eacute; align&eacute;es par des algorithmes 
+								heuristiques, nous permettons &agrave; l'utilisateur d'am&eacute;liorer les r&eacute;sultats 
+								l&agrave; o&ugrave; l'ordinateur a &eacute;chou&eacute;. 
+
+								 
+									
+								<h1>Les donn&eacute;es </h1>
+								<P>
+
+								Les alignements de g&eacute;nomes sont gracieusement fournis par <a href="http://genome.ucsc.edu/">le navigateur de g&eacute;nomes de l'Universit&eacute; de Californie &agrave; Santa Cruz</a>. 
+								<BR>En fait, tous les alignements contiennent des r&eacute;gions de l'ADN humain 
+								qui sont suspect&eacute;es d'&ecirc;tre reli&eacute;es &agrave; des d&eacute;sordres g&eacute;n&eacute;tiques tels que 
+								le cancer du sein.
+								<br>Chaque alignement est re&ccedil;u, analys&eacute;, et stock&eacute; dans une base de donn&eacute;es, 
+								&agrave; partir d'o&ugrave; il sera &eacute;ventuellement possible de r&eacute;introduire les 
+								r&eacute;sultats dans l'alignement global en tant qu'optimisation. 
+								 
+								<HR style="height: 2px" color="#696969"/>
+								<center><P>Pour plus d'information &agrave; propos de ces sujets clique <a href="http://lmgtfy.com/?q=Multiple+Sequence+Alignment">ici</a>.</center>
+								 </h1>
+    </div>
+    
+    </div>
+  <script type="text/javascript">
+    swfobject.embedSWF("http://phylo.alfredkam.com/flash/Kepler_eng.swf", "flashContent", "800", "400", "10.0", null, {wmode:"transparent"}, null, {name:"flashContent"});       
+  </script>
+	    </div>
+    </div>
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> En jouant &agrave; Phylo, vous aidez &agrave; rep&eacute;rer des maladies g&eacute;netiques dans l'ADN humain. En savoir <a href="about.html">plus</a>.</p>
+    </div>
+    <div id="section">
+      <p> Faites partie de la <a href="https://www.facebook.com/groups/127713783941517/">communaut&eacute;</a> de Phylo sur facebook ou soutenez notre initiative avec un "j'aime":</p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+        </div> 
+    <div id="section">
+        <a href="rankings.html" class="button">Classement</a>
+    </div>
+    <div id="section">
+        <a href="results.html" class="button">R&eacute;sultats</a>
+    </div>
+    </footer>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Phylo</title>
+    <link href="../static/style.css" media="screen" rel="Stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+  <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script> 
+  </head>
+  <body>
+  <!-- fb stuff -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '200256936686133', // App ID
+      channelURL : '//phylo.cs.mcgill.ca/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     d.getElementsByTagName('head')[0].appendChild(js);
+   }(document));
+</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1&appId=200256936686133";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- header -->
+    <div id="canvas" class="center"></div>
+
+  <!-- content -->
+    <div id="content_wrap" class="center">
+    
+    <div id="content">
+    <h1>What's Phylo all about?</h1>
+        <p>
+								Though it may appear to be just a game, Phylo is actually a framework for harnessing the computing 
+								power of mankind to solve a common problem; Multiple Sequence Alignments.
+									
+    <h1>What is a Multiple Sequence Alignment?</h1>
+        <p>
+								
+								A sequence alignment is a way of arranging the sequences of D.N.A, R.N.A or protein to identify
+								regions of similarity. These similarities may be consequences of functional, structural, or 
+								evolutionary relationships between the sequences.
+								<br/>From such an alignment, biologists may infer shared evolutionary origins, identify functionally
+								important sites, and illustrate mutation events. More importantly, biologists can trace the source
+								of certain genetic diseases.
+									
+    <h1>The Problem</h1>
+		<p>
+			
+								Traditionally, multiple sequence alignment algorithms use computationally complex heuristics to align the sequences.
+								<BR>Unfortunately, the use of heuristics do not guarantee global optimization as it would be prohibitively computationally
+								expensive to achieve an optimal alignment. This is due in part to the sheer size of the genome, which consists of roughly
+								three billion base pairs, and the increasing computational complexity resulting from each additional sequence in an alignment. 
+
+
+									
+    <h1>Our Approach</h1>
+		<p>
+			
+								Humans have evolved to recognize patterns and solve visual problems efficiently. 
+								<BR>By abstracting multiple sequence alignment to manipulating patterns consisting of coloured shapes, 
+								we have adapted the problem to benefit from human capabilities. 
+								<BR>By taking data which has already been aligned by a heuristic algorithm, we allow the user to optimize
+								where the algorithm may have failed. 
+    </p>
+									
+	<h1>The Data</h1>
+		<p>
+
+								All alignments were generously made available through <a href="http://genome.ucsc.edu/">UCSC Genome Browser</a>. 
+								<BR>Infact, all alignments contain sections of human DNA which have been speculated to be linked to various genetic disorders,
+								such as breast cancer.
+								<br>Every alignment is received, analyzed, and stored in a database, where it will eventually be re-introduced back
+								into the global alignment as an optimization. 
+								<HR style="height: 2px" color="#696969"/>
+								<center><P>For more information about any one of these topics, click <a href="http://lmgtfy.com/?q=Multiple+Sequence+Alignment">here</a></center>
+        </p>
+    
+    </div>
+    
+    </div>
+  <script type="text/javascript">
+    swfobject.embedSWF("http://phylo.alfredkam.com/flash/Kepler_eng.swf", "flashContent", "800", "400", "10.0", null, {wmode:"transparent"}, null, {name:"flashContent"});       
+  </script>
+	    </div>
+    </div>
+    <div id="line" class="center">
+      <div class="dark"></div>
+      <div class="light"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="center">
+    <div id="section">
+      <p> Phylo is a challenging flash game in which every puzzle completed contributes to mapping diseases within human DNA. Learn <a href="about.html">more</a>.</p>
+    </div>
+    <div id="section">
+      <p> Join the phylo <a href="https://www.facebook.com/groups/127713783941517/">community</a> on facebook or give us a thumbs up: </p>
+      <div class="fb-like" data-href="http://phylo.cs.mcgill.ca" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+    </div> 
+        </div> 
+    <div id="section">
+        <a href="rankings.html" class="button">Rankings</a>
+    </div>
+    <div id="section">
+        <a href="results.html" class="button">Results</a>
+    </div>
+    </footer>
+  </body>
+    	<!--[if IE]><script type="text/javascript" src="../static/excanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="../static/raphael-min.js"></script>
+    <script type="text/javascript" src="../static/script.js"></script>
+</html>

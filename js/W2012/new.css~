@@ -1,0 +1,99 @@
+body {
+	text-align:center;
+	background-image:url(http://phylo.cs.mcgill.ca/beta/static/light_paper.png);
+	background-repeat:repeat;
+	color:white;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+#sandbox {
+	position : relative;
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.bgBox {
+	background-image:url(http://phylo.cs.mcgill.ca/beta/static/dark_paper.png);
+	border-color:#383838;
+	border-width:2px;
+	border-style: solid;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	position: absolute;
+	background-position: -10px -10px;
+}
+.menu-body .menu {
+	z-index:10 !important;
+	position:relative;
+	float:right;
+}
+.wrapper {
+	text-align:left;
+	min-width:1024px;
+	width:1024px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;		
+}
+.menu-body {
+	position:absolute;
+	width:1024px;
+}
+.menu-body div{
+	position:relative;
+	display:inline;
+	float:right;
+	z-index: 10;
+}
+
+#login div, #settings div {
+	color:white;
+	font: 13.5px/27px Arial,sans-serif;
+	padding: 1px 10px;
+}
+
+#login a:hover div , #settings a:hover div, .onHover{
+	background-color:#E4EBF8;
+	color:black !important;
+}
+
+#login_box, #settings_box {
+	position:absolute;	
+	border: 1px solid #E4EBF8;
+	display:none;
+	top:29px;
+	right:0.5px;
+}
+
+#login_box {
+	background-color:white;
+	width: 400px;
+	height: 200px;
+}
+#settings_box {
+	background-color:white;
+	width: 500px;
+	height: 200px;
+}
+
+
+footer {
+	left:15px;
+	position:relative;
+}
+#input_box input {
+	position:relative;
+	display:none;
+	left:-153px;
+	font-size:30px;
+	top:-300px;
+	z-index: 2;
+}
+
+.iframe-tutorial {
+	left: 50px;
+	position:relative;
+	border: 0px;
+}
